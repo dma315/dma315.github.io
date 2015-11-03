@@ -1,0 +1,13 @@
+.class_container {
+	width: 80%;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+}
+
+header img {
+	width: 100%;
+}
