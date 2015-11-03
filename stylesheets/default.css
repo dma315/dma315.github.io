@@ -1,8 +1,9 @@
-/*
+
 * {
-	border: 1px solid black;
+	font-family: Arial;
+	color: #43464a;
 }
-*/
+
 
 .container {
 	 width: 1000px;
@@ -11,13 +12,32 @@
 	 margin: 0 auto;
 }
 
+.space {
+	height: 10px;
+	width: 100%;
+	display: block;
+}
+
+
+
+/* -------------------------------*/
+/* Here starts the header and nav */
+
 header {
 	width: 100%;
+	padding-bottom: 5px;
 }
 
 header img {
 	width: 100%;
-	opacity: 0.5;
+	opacity: 1;
+}
+
+nav {
+	border-top: 1px solid #43464a; 
+	border-bottom: 1px solid #43464a;
+	border-left: 0px solid #43464a;
+	border-right: 0px solid #43464a;
 }
 
 .head-button {
@@ -25,40 +45,83 @@ header img {
 	height: 25px; /* Why does vertical alignment have to be so damn hard */
 	display: inline-block;
 	text-align: center;
-	padding-top: 5px;
-}
-
-.head-button:hover {
-	background-color: blue; /* Placeholder */
-}
-
-content {
-	margin-top: 10px;
-	width: 30.3%; /* Inherits its 20% width from .container */
-	margin: 10px 5px 10px 5px;
-	float: left;
-	padding: 10px;
-	text-align: left;
-	display: inline-block;
+	padding-top: 7px;
 	border-radius: 5px;
 }
 
-content img {
+.head-button:hover {
+	color: #004869;
+	font-weight: bold;
+}
+
+.head-button a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.head-button a:visited {
+	text-decoration: none;
+	color: inherit
+}
+
+
+
+/* -------------------------------*/
+/* Here starts the 3 text boxes */
+
+content {
+	margin: 5px 5px 5px 5px;
+	width: 300px; 
+	height:  300px;
+	float: left;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid #43464a;
+	text-align: center;
+}
+
+content:hover {
+	background-color: #54A7CC;
+}
+
+
+
+/* -------------------------------*/
+/* Here starts the 3 photo boxes */
+
+.photo-box {
+	margin: 5px 5px 5px 5px;
+	width: 320px; 
+	height:  320px;
+	float: left;
+	padding: 0px;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid #43464a;
+	overflow: hidden;
+}
+
+.photo-box:hover img {
+	opacity: 0.3;
+}
+
+.photo-box img {
+	position: relative;
 	width: 100%;
+	margin: auto;
 }
 
-#profile {
-	background-color: blue;
-}
 
-#what-i-do {
-	background-color: yellow;
-}
 
-#what-i-like {
-	background-color: red;
-}
+/* -------------------------------*/
+/* Here starts the footer */
 
 footer {
 	clear: both;
+	font-size: 0.7em;
+	border-top: 1px solid #43464a;
 }
+
+
+
