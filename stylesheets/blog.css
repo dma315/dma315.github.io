@@ -1,13 +1,10 @@
-section {
+/* Blog index elements */
+
+section { 
 	width: 100%;
 	height: 200px;
 	margin: 0px;
 	padding: 0px;
-}
-
-hr {
-	height: 0px;
-	border-top: 1px solid #004869;
 }
 
 .blog-image {
@@ -42,4 +39,35 @@ hr {
 	color: #004869;
 	font-style: italic;
 	font-weight: bold;
+}
+
+/* Individual blog post elements */
+
+main {
+	width: 95%;
+	margin: auto;
+}
+
+main section {
+	height: auto;
+}
+
+.blog-header {
+	color: #004869;
+}
+
+.blog-header h1 {
+	margin-bottom: 5px;
+}
+
+.blog-header p {
+	margin-top: 5px;
+}
+
+.blog-text {
+	color: #43464a;
+}
+
+.blog-text h4 {
+	color: #004869;
 }

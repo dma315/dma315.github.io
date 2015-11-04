@@ -1,48 +1,107 @@
 <!DOCTYPE html>
+
+<!--
+
+Reflection:
+
+1. How was it to wireframe and create an HTML page with a pair?
+  
+  Thought it was helpful, as usual, to hear how somebody else is thinking about their code and what they are thinking about when it comes to being creative.
+
+  It was a bit more logistically challenging this time around, especially with the wireframing, but the HTML section was pretty solid. We got into a good discussion about the semantic elements, which I think was helpful to hear others' thoughts on. 
+
+2. Did you find wireframing to be helpful to your development process?
+
+  Yes, it was nice to have a template to work off of. I found myself referring back to it when trying to write the HTML code, so I was definitely using it in the "development" process.
+
+3. What did you and your pair decide made a good wireframe? 
+  
+  We decided that the wireframe should have a few components.
+    -The overall website header / footer (to be consistent)
+    -A header section that makes the rest of the blog post navigatable
+    -Sectioned off parts for each question
+
+4. What new semantic elements did you learn about (if any)?
+  
+  We used the <section> tags to help break up the sections. Admittedly, it's perhaps a little unclear still on how these will be used, but it seems like they are best practice for breaking up the code and making it more readbale. I can also see how it would be helpful for formatting, once we learn that. 
+
+-->
+
+<html>
+
 <head>
-  <title>David's DBC Blog</title>
+  <title>Blog Template</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css" />
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css" />
 </head>
 
-<main>
-  <h1>Week 1 Blog</h1>
-  <h2>The benefits of Git</h2>
-  <h4>10.21.15</h4>
+<body>
+  <div class="container">
+    <!-- Header and nav bar -->
 
-  <section>
-    <p>
-      <b>Version Control:  WHY???</b>
-      <br><br>
-      Because, that's why. As someone who's spent his career thus far living in Excel spreadsheets, paging through thousands of lines of data, there's nothing worse than not saving or waiting to work on a file while somebody else is making edits. And then to increase suffering, usually someone has to manually compile all of the files from everyone. Thank Google for Google Sheets (which of course comes with all of its own issues).
-      <br><br>
-      That's where Git comes in. As someone just coming into the development world, but having spent a few months working with developers, I've seen the "epics" that teams have gone on. We aren't talking about a 10 sheet model here, we're talking software that people actually use. It's quite incredible that they're to get anything done without stepping on each others toes while also being able to go back and see what happened 3 weeks ago if needed. The benefits are obvious and Git does for the tech world what apparently few business people have figured out. 
-      <br><br> 
-      Here are my top reasons for using git, and more specifically using Github.
-      <br>1. Changes are tracked:  But not in the v1, v2 kind of way. Every every change is named, dated, and marked up, so you can see EXACTLY what changed from one version to the next.
-      <br>2. Change are forever:  Oh, I screwed something up? Tough luck. Just kidding. Just go back. As many versions as you want.
-      <br>3. Changes are everywhere: Left your thumb drive at home? No problem, you can grab your changes from anywhere with Github.
-    </p>
+    <header>
+      <img src="../imgs/chicago-lake.png" alt="Uh oh, my image link is wrong :(" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">About Me</a>
+        <li><a href="#">Resume</a>
+        <li><a href="../blog/index.html">Blog</a>
+        <li><a href="#">Projects</a>
+        <li><a href="#">Contact</a>
+      </ul>
+    </nav>
     
-    <p>
-      <b>How does Git keep track of changes</b>
-      <br>
-      <br>1. Git allows a user to create branches (really great for collaboration) and parallel work streams.
-      <br>2. Git then allows each branch to have multiple commits (or saves).
-      <br>3. Each commit also contains information about what exactly was changed.
-      <br>4. And then all of the branches and commits can be stored historically, so there's a paper trail of everything.
-    </p>
+    <main>
+      <section class="blog-header">
+        <p><a href="../blog/index.html">Back to all blog posts</a></p>
+        <h1>The Benefits of Git</h1>
+        <p>October 21, 2015</p>
+      </section>
+      <hr>
+      <section class="blog-text">
+        
+            <h4>Version Control:  WHY???</h4>
+            <p>Because, that's why. As someone who's spent his career thus far living in Excel spreadsheets, paging through thousands of lines of data, there's nothing worse than not saving or waiting to work on a file while somebody else is making edits. And then to increase suffering, usually someone has to manually compile all of the files from everyone. Thank Google for Google Sheets (which of course comes with all of its own issues).</p>
+            <p>That's where Git comes in. As someone just coming into the development world, but having spent a few months working with developers, I've seen the "epics" that teams have gone on. We aren't talking about a 10 sheet model here, we're talking software that people actually use. It's quite incredible that they're to get anything done without stepping on each others toes while also being able to go back and see what happened 3 weeks ago if needed. The benefits are obvious and Git does for the tech world what apparently few business people have figured out.</p>
+            <p>Here are my top reasons for using git, and more specifically using Github.</p>
+            <ol>
+              <li>Changes are tracked:  But not in the v1, v2 kind of way. Every every change is named, dated, and marked up, so you can see EXACTLY what changed from one version to the next.</li>
+              <li>Change are forever:  Oh, I screwed something up? Tough luck. Just kidding. Just go back. As many versions as you want.</li>
+              <li>Changes are everywhere: Left your thumb drive at home? No problem, you can grab your changes from anywhere with Github.</li>
+            </ol>       
+          
+            <h4>How does Git keep track of changes</h4>
+            <ol>
+              <li>Git allows a user to create branches (really great for collaboration) and parallel work streams.</li>
+              <li>Git then allows each branch to have multiple commits (or saves).</li>
+              <li>Each commit also contains information about what exactly was changed.</li>
+              <li>And then all of the branches and commits can be stored historically, so there's a paper trail of everything.</li>
+            </ol>
 
-    <p>
-      <b>Why use GitHub?</b>
-      <br><br>
-      Github is THE way to make sure that every significant change ever made is kept.
-      <br>...and not just kept, but kept forever
-      <br>...remotely (think: in the cloud)
-      <br><br>That is, I as a developer will always be able to see my code, and if I want, I can share it with anyone.
-      <br>It fosters a sense of community and makes it easy to collaborate and share...which is generally how the dev community operates!
-    </p>
+            <h4>Why use GitHub?</h4>
+            <p>Github is THE way to make sure that every significant change ever made is kept.
+            <br>...and not just kept, but kept forever
+            <br>...remotely (think: in the cloud)</p>
+            <p>That is, I as a developer will always be able to see my code, and if I want, I can share it with anyone.
+            It fosters a sense of community and makes it easy to collaborate and share...which is generally how the dev community operates!</p>
 
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>Too close for missiles, switching to guns.</p>
+      <p>Contact: 
+          <a href="mailto:dma315@gmail.com">Email</a>   
+          <a href="https://www.linkedin.com/profile/view?id=AAMAAAQdDl4BdWYDFCFvaKEWYEzS5YZcpiVqBM8&trk">LinkedIn</a>
+          <a href="https://www.facebook.com/dma315">Facebook</a>
+      </p>
+    </footer> 
+
+  </div>
+</body>
+
+</html>
