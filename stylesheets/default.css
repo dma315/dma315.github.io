@@ -1,7 +1,6 @@
 
 * {
 	font-family: Arial;
-	color: #43464a;
 }
 
 
@@ -34,10 +33,10 @@ header img {
 }
 
 nav {
-	border-top: 1px solid #43464a; 
-	border-bottom: 1px solid #43464a;
-	border-left: 0px solid #43464a;
-	border-right: 0px solid #43464a;
+	border-top: 1px solid #004869; 
+	border-bottom: 1px solid #004869;
+	border-left: 0px solid #004869;
+	border-right: 0px solid #004869;
 }
 
 .head-button {
@@ -45,6 +44,7 @@ nav {
 	height: 25px; /* Why does vertical alignment have to be so damn hard */
 	display: inline-block;
 	text-align: center;
+	color: #43464a;
 	padding-top: 7px;
 	border-radius: 5px;
 }
@@ -77,15 +77,36 @@ content {
 	padding: 10px;
 	display: inline-block;
 	border-radius: 5px;
-	border: 1px solid #43464a;
+	border: 1px solid #004869;
 	text-align: center;
 }
 
 content:hover {
-	background-color: #54A7CC;
+	background-color: #004869;
+	color: white;
 }
 
+content h2 {
+	position: relative;
+	top: 110px;
+	visibility: visible;
+	color: #004869;
+}
 
+.hidden-text {
+	visibility: hidden;
+}
+
+content:hover h2 {
+	visibility: hidden;
+}
+
+content:hover .hidden-text {
+	position: relative;
+	margin: auto;
+	width: 80%;
+	visibility: visible;
+}
 
 /* -------------------------------*/
 /* Here starts the 3 photo boxes */
@@ -98,16 +119,34 @@ content:hover {
 	padding: 0px;
 	display: inline-block;
 	border-radius: 5px;
-	border: 1px solid #43464a;
+	border: 1px solid #004869;
 	overflow: hidden;
+}
+
+.photo-box:hover {
+	background-color: white;
 }
 
 .photo-box:hover img {
 	opacity: 0.3;
 }
 
-.photo-box img {
+
+.photo-caption {
 	position: relative;
+	margin: auto;
+	width: 80%;
+	top: -220px;
+	visibility: hidden;
+	color: #004869;
+	font-weight: bold;
+}
+
+.photo-box:hover .photo-caption {
+	visibility: visible;
+}
+
+.photo-box img {
 	width: 100%;
 	margin: auto;
 }
@@ -120,7 +159,7 @@ content:hover {
 footer {
 	clear: both;
 	font-size: 0.7em;
-	border-top: 1px solid #43464a;
+	border-top: 1px solid #004869;
 }
 
 
