@@ -52,6 +52,16 @@ main section {
 	height: auto;
 }
 
+main ul {
+	padding: auto;
+	margin: auto;
+}
+
+main li {
+	padding: auto;
+	margin: auto;
+}
+
 .blog-header {
 	color: #004869;
 }

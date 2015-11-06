@@ -61,12 +61,12 @@ a:hover {
 
 /* Main section - Creating the grid */
 
-main {
+main.box-creation {
 	padding: 0px;
 	width: 100%;
 }
 
-main ul {
+main.box-creation ul {
 	padding: 0px; /* Removes Webkit's default padding for lists */
 	margin: 0px;
 }
