@@ -125,7 +125,7 @@ li .image-overlay {
 	visibility: visible;
 }
 
-/* Text overlays */
+/* Text overlays - god this was a pain and such a hack, I'm sorry */
 
 .table-wrapper .description {
 	height: 300px;
@@ -165,5 +165,3 @@ li .image-overlay {
 	visibility: hidden;
 	width: 0px;
 }
-
-*/
