@@ -34,7 +34,6 @@ nav {
 	background-color: #004869;
 	color: white;
 	height: 40px;
-	font-weight: bold;
 }
 
 div#name {
@@ -74,7 +73,7 @@ div#navlinks a:hover {
 main ul.tile {
 	text-align: center;
 	padding: 0px;
-	background-color: #43464A;
+	background-color: #27292B;
 	color: white;
 	font-weight: bold;
 }

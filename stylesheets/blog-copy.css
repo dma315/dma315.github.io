@@ -2,7 +2,8 @@
 
 main {
 	padding: 20px 0px 20px 0px;
-	background-color: white;
+	background-color: #27292B;
+	color: #F5F5F5;
 }
 
 hr {
@@ -19,7 +20,7 @@ hr {
 }
 
 .post p {
-	color: #004869;
+	color: white;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
@@ -34,15 +35,15 @@ hr {
 }
 
 .post a:link {
-	color: #004869;
+	color: white;
 }
 
 .post a:visited {
-	color: #004869;
+	color: white;
 }
 
 .post a:hover {
-	color: #004869;
+	color: white;
 	opacity: 0.8;
 }
 
@@ -51,7 +52,7 @@ hr {
 main.blog-post {
 	padding-left: 5%;
 	padding-right: 5%;
-	color: #004869
+	color: white
 }
 
 main.blog-post p {
