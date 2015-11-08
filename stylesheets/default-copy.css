@@ -43,6 +43,23 @@ div#navlinks li {
 	padding: 10px;
 }
 
+div#navlinks a:link {
+	text-decoration: none;
+	color: white;
+}
+
+div#navlinks a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+div#navlinks a:hover {
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid white;
+	opacity: 0.8;
+}
+
 /* 6 tiles base formatting */
 
 main ul {
@@ -121,6 +138,11 @@ li .image-overlay {
 	padding-right: 15%;
 }
 
+.description p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 #box1:hover .image-overlay, #box3:hover .image-overlay, #box5:hover .image-overlay {
 	visibility: visible;
 }
@@ -152,8 +174,6 @@ li .image-overlay {
 	width: 100%;
 	visibility: visible;
 	font-size: 1em;
-	margin-bottom: 1em;
-	margin-top: 1em;
 }
 
 .table-wrapper:hover .who {
@@ -164,4 +184,43 @@ li .image-overlay {
 .table-wrapper:hover .who p {
 	visibility: hidden;
 	width: 0px;
+}
+
+/* Footer */
+
+footer {
+	height: 20px;
+	background-color: #004869;
+	color: white;
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+}
+
+footer ul {
+	padding: 0px;
+}
+
+footer li {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;	
+	font-size: 0.75em;
+	width: 60px;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: white;
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid white;
+	opacity: 0.8;
 }
