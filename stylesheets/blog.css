@@ -87,3 +87,17 @@ span.important {
 	color: #F3D16A;
 	font-weight: bold;
 }
+
+pre {
+	padding: 0.5em;
+	margin: 1em auto;
+	width: 80%; 
+	background-color: #F3D16A;
+	opacity: 0.7;
+}
+
+code {
+	font-family: Times;
+	padding: 0.5em;
+	color: black;
+}
