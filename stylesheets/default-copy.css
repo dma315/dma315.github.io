@@ -12,38 +12,39 @@ p {
 
 header {
 	margin: 0px;
+	position: relative;
+	width: 100%;
 }
 
 header#cover {
 	width: 100%;
 	height: 350px;
-	background-image: url("../imgs/skyline-cropped.jpeg");
+	background-image: url("../imgs/tree-lights.jpeg");
 	background-size: cover;
-	background-position: center;
-}
-
-header div#overlay {
-	width: 100%;
-	height: 350px;
-	z-index: 100;
-	background-color: transparent;
-	opacity: 0.4;
+	background-position: center bottom;
 }
 
 nav {
-	background-color: #004869;
-	color: white;
-	height: 40px;
+	background-color: #F3D16A;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 100;
+	opacity: 0.8;
+	color: black;
 }
 
 div#name {
 	float: left;
-	margin: 10px 
+	margin: 10px;
+	padding: 5px;
 }
 
 div#navlinks {
 	float: right;
 	margin: 10px;
+	padding: 5px;
 }
 
 div#navlinks li {
@@ -53,29 +54,36 @@ div#navlinks li {
 
 div#navlinks a:link {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 div#navlinks a:visited {
 	text-decoration: none;
-	color: white;
+	font-weight: bold;
+	color: black;
 }
 
 div#navlinks a:hover {
 	text-decoration: none;
 	color: white;
 	border-bottom: 2px solid white;
+	font-weight: bold;
 	opacity: 0.8;
 }
 
 /* 6 tiles base formatting */
 
+main.boxes {
+	position: relative;
+}
+
 main ul.tile {
 	text-align: center;
 	padding: 0px;
-	background-color: #27292B;
-	color: white;
+	background-color: #1B1E2B;
+	color: black;
 	font-weight: bold;
+	opacity: 0.9;
 }
 
 main ul.tile li {
@@ -134,7 +142,7 @@ li.text {
 li .image-overlay {
 	width: 101%;
 	height: 300px;
-	background-color: #004869;
+	background-color: #969ABB;
 	opacity: 0.9;
 	display: table;
 	visibility: hidden;
@@ -161,8 +169,8 @@ li .image-overlay {
 
 .table-wrapper .description {
 	height: 300px;
-	background-color: #E4F5FC;
-	color: #004869;
+	background-color: #C0B4B8;
+	color: black;
 	display: table-cell;
 	visibility: hidden;
 	padding: 0%;
@@ -200,11 +208,12 @@ li .image-overlay {
 
 footer {
 	height: 20px;
-	background-color: #004869;
-	color: white;
+	background-color: #F3D16A;
+	color: black;
 	padding: 20px 0px 20px 0px;
 	text-align: center;
 	font-weight: bold;
+	opacity: 0.8;
 }
 
 footer ul {
@@ -221,17 +230,17 @@ footer li {
 
 footer a:link {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 footer a:visited {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 footer a:hover {
 	text-decoration: none;
-	color: white;
-	border-bottom: 1px solid white;
+	color: black;
+	border-bottom: 1px solid black;
 	opacity: 0.8;
 }

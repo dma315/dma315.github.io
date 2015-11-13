@@ -2,15 +2,18 @@
 
 main {
 	padding: 20px 0px 20px 0px;
-	background-color: #27292B;
-	color: #F5F5F5;
+	background-color: #A4B8D7;
 }
 
 hr {
 	height: 0px;
-	border-top: 1px solid #004869;
+	border-top: 1px solid #1B1E2B;
 	width: 80%;
 	margin: 0% 10% 0% 10%;
+}
+
+div {
+	opacity: 1.0;
 }
 
 .post {
@@ -20,7 +23,7 @@ hr {
 }
 
 .post p {
-	color: white;
+	color: black;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
@@ -35,15 +38,15 @@ hr {
 }
 
 .post a:link {
-	color: white;
+	color: black;
 }
 
 .post a:visited {
-	color: white;
+	color: black;
 }
 
 .post a:hover {
-	color: white;
+	color: #1B1E2B;
 	opacity: 0.8;
 }
 
@@ -52,7 +55,7 @@ hr {
 main.blog-post {
 	padding-left: 5%;
 	padding-right: 5%;
-	color: white
+	color: black;
 }
 
 main.blog-post p {
