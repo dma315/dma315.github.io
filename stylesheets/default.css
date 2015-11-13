@@ -1,199 +1,246 @@
 * {
-	font-family: Arial;
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
 }
 
-hr {
-	height: 0px;
-	border-top: 1px solid #004869;
+p {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
-/* Container for entire site */
+/* Header and Nav Bar */
 
-.container {
-	width: 1000px;
-	margin: auto;
-}
-
-/* Header image only */
-
-.container img {
+header {
+	margin: 0px;
+	position: relative;
 	width: 100%;
 }
 
-/* Navbar */
-
-nav ul {
-	padding: 0px; /* Removes Webkit's default padding for lists */
-	margin-top: 5px; /* Removes Webkit's default margin */
-	margin-bottom: 20px; /* Removes's Webkit's default margin */
+header#cover {
+	width: 100%;
+	height: 350px;
+	background-image: url("../imgs/tree-lights.jpeg");
+	background-size: cover;
+	background-position: center bottom;
 }
 
-nav li {
-	position: relative;
-	display: inline-block;
-	width: 20%; /* The ul padding above makes it so that the 20% actually comes out to 200px */
-	height: 30px;
-	line-height: 30px; /* Required for the vertical align property below */
-	vertical-align: middle;
-	text-align: center;
-	border-top: 1px solid #004869;
-	border-bottom: 1px solid #004869;
+nav {
+	background-color: #F3D16A;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 100;
+	opacity: 0.8;
+	color: black;
 }
 
-/* Links */ 
-/* These apply to the footer as well */
+div#name {
+	float: left;
+	margin: 10px;
+	padding: 5px;
+}
 
-a {
+div#navlinks {
+	float: right;
+	margin: 10px;
+	padding: 5px;
+}
+
+div#navlinks li {
+	display: inline;
+	padding: 10px;
+}
+
+div#navlinks a:link {
 	text-decoration: none;
-	color: #43464a;
+	color: black;
 }
 
-a:visited {
-	text-decoration: none;
-	color: #43464a;
-}
-
-a:hover {
+div#navlinks a:visited {
 	text-decoration: none;
 	font-weight: bold;
-	color: #004869;
+	color: black;
 }
 
-/* Main section - Creating the grid */
-
-main.box-creation {
-	padding: 0px;
-	width: 100%;
-}
-
-main.box-creation ul {
-	padding: 0px; /* Removes Webkit's default padding for lists */
-	margin: 0px;
-}
-
-li.left {
-	position: relative;
-	display: inline-block;
-	width: 32%;
-	height: 300px;
-	margin-right: 2%;
-	margin-bottom: 20px;
-}
-
-li.center {
-	position: relative;
-	display: inline-block;
-	width: 32%;
-	height: 300px;
-	margin-right: 2%;
-	margin-bottom: 20px;	
-}
-
-li.right {
-	position: relative;
-	display: inline-block;
-	width: 32%;
-	height: 300px;
-	margin-bottom: 20px;	
-}
-
-/* Entering boxes inside boxes */
-
-figure {
-	position: absolute;
-	top: 0px:
-	left: 0px;
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-	height: 300px;
-	border: 1px solid #004869;
-	border-radius: 10px;
-}
-
-/* Image hovers */
-
-.image-shown {
-	width: 100%;
-	overflow: hidden;
-}
-
-.image-shown img {
-	width: 100%;
-	z-index: 100;
-}
-
-.text-overlay {
-	z-index: 100;
-	padding-left: 10%;
-	padding-right: 10%;
-	width: 80%;
-	text-align: center;
-	display: table;
-	color: #004869;
-}
-
-.middle-data { 
-	/* Extra layer that puts a single cell on top of the text-overlay "table", helps middle align */
-	z-index: 1000;
-	display: table-cell;
-	vertical-align: middle;
-	visibility: hidden;
-}
-
-
-.text-overlay:hover { /* When hovering over the text overlay, which is on top, create opaque background */
-	background-color: white;
+div#navlinks a:hover {
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid white;
+	font-weight: bold;
 	opacity: 0.8;
 }
 
-.text-overlay:hover .middle-data { /* Show the cell only when text-overlay is hovered over */
+/* 6 tiles base formatting */
+
+main.boxes {
+	position: relative;
+}
+
+main ul.tile {
+	text-align: center;
+	padding: 0px;
+	background-color: #1B1E2B;
+	color: black;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+main ul.tile li {
+	width: 33.33%;
+	height: 300px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Image boxes */
+
+li#box1 {
+	background-image: url("../imgs/paris.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+li#box3 {
+	background-image: url("../imgs/ski-trees.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+li#box5 {
+	background-image: url("../imgs/pcb.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+/* Text Boxes */
+
+li.text {
+	color: white;
+}
+
+.table-wrapper {
+	display: table;
+	height: 300px;	
+	width: 100%;
+}
+
+.who {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.who p {
+	font-size: 1.5em;
+	color: white;
+}
+
+/* Image overlays */
+
+li .image-overlay {
+	width: 101%;
+	height: 300px;
+	background-color: #969ABB;
+	opacity: 0.9;
+	display: table;
+	visibility: hidden;
+}
+
+.description { /* Uused also for text overlaps */
+	z-index: 100;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.description p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#box1:hover .image-overlay, #box3:hover .image-overlay, #box5:hover .image-overlay {
 	visibility: visible;
 }
 
-/* Text hovers */
+/* Text overlays - god this was a pain and such a hack, I'm sorry */
 
-.text-header {
-	z-index: 100;
-	padding-left: 10%;
-	padding-right: 10%;
-	width: 80%;
-	background-color: white;
-	color: #004869;
-	text-align: center;
-	display: table;
-}
-
-.middle-header {
+.table-wrapper .description {
+	height: 300px;
+	background-color: #C0B4B8;
+	color: black;
 	display: table-cell;
-	vertical-align: middle;
+	visibility: hidden;
+	padding: 0%;
 }
 
-.text-description {
-	padding-left: 10%;
-	padding-right: 10%;
-	width: 80%;
-	background-color: #004869;
-	color: white;
-	text-align: center;
-	display: table;
+.table-wrapper .description p {
+	width: 0px;
+	visibility: hidden;
+	font-size: 0em;
 }
 
-.middle-description {
-	display: table-cell;
-	vertical-align: middle;
+.table-wrapper:hover .description {
+	visibility: visible;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
-.text-header:hover { /* Rather than hide the box, simply set everything to transparent */
-	background-color: transparent;
-	color: transparent;
+.table-wrapper:hover .description p {
+	width: 100%;
+	visibility: visible;
+	font-size: 1em;
+}
+
+.table-wrapper:hover .who {
+	visibility: hidden;
+	width: 0px;
+}
+
+.table-wrapper:hover .who p {
+	visibility: hidden;
+	width: 0px;
 }
 
 /* Footer */
 
 footer {
-	font-size: 0.75em;
-	color: #43464a;
+	height: 20px;
+	background-color: #F3D16A;
+	color: black;
+	padding: 20px 0px 20px 0px;
 	text-align: center;
-	border-top: 1px solid #004869;
+	font-weight: bold;
+	opacity: 0.8;
+}
+
+footer ul {
+	padding: 0px;
+}
+
+footer li {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;	
+	font-size: 0.75em;
+	width: 60px;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+	opacity: 0.8;
 }
