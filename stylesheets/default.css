@@ -19,9 +19,9 @@ header {
 header#cover {
 	width: 100%;
 	height: 350px;
-	background-image: url("../imgs/tree-lights.jpeg");
+	background-image: url("../imgs/2014-tree-lights.jpeg");
 	background-size: cover;
-	background-position: center bottom;
+	background-position: center 90%;
 }
 
 nav {
@@ -78,9 +78,8 @@ main.boxes {
 main ul.tile {
 	text-align: center;
 	padding: 0px;
-	background-color: #1B1E2B;
+	background-color: #323440;
 	color: black;
-	opacity: 0.9;
 }
 
 main ul.tile li {
@@ -94,21 +93,21 @@ main ul.tile li {
 /* Image boxes */
 
 li#box2 {
-	background-image: url("../imgs/pcb.jpg");
+	background-image: url("../imgs/2012-pcb.jpg");
 	background-size: cover;
-	background-position: center bottom;
+	background-position: center 0%;
 }
 
 li#box4 {
-	background-image: url("../imgs/paris.jpg");
+	background-image: url("../imgs/2015-london-trees.jpg");
 	background-size: cover;
-	background-position: center bottom;
+	background-position: center 75%;
 }
 
 li#box6 {
-	background-image: url("../imgs/ski-trees.jpg");
+	background-image: url("../imgs/2014-breck-trees.jpg");
 	background-size: cover;
-	background-position: center bottom;
+	background-position: center 80%;
 }
 
 
@@ -141,7 +140,7 @@ li .image-overlay {
 	width: 101%;
 	height: 300px;
 	background-color: #D5E9FF;
-	opacity: 0.9;
+	opacity: 0.8;
 	display: table;
 	visibility: hidden;
 }
