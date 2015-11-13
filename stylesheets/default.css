@@ -1,6 +1,6 @@
 * {
 	margin: 0px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Cabin', sans-serif;
 }
 
 p {
@@ -59,7 +59,6 @@ div#navlinks a:link {
 
 div#navlinks a:visited {
 	text-decoration: none;
-	font-weight: bold;
 	color: black;
 }
 
@@ -67,7 +66,6 @@ div#navlinks a:hover {
 	text-decoration: none;
 	color: black;
 	border-bottom: 2px solid black;
-	font-weight: bold;
 	opacity: 0.8;
 }
 
@@ -82,7 +80,6 @@ main ul.tile {
 	padding: 0px;
 	background-color: #1B1E2B;
 	color: black;
-	font-weight: bold;
 	opacity: 0.9;
 }
 
@@ -212,7 +209,6 @@ footer {
 	color: black;
 	padding: 20px 0px 20px 0px;
 	text-align: center;
-	font-weight: bold;
 	opacity: 0.8;
 }
 
