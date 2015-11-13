@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>CSS Concepts</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="../stylesheets/default.css" />
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css" />
+</head>
+
+<body>
+	<div class="container">
+		<!-- Header and nav bar -->
+
+		<header>
+			<img src="../imgs/chicago-lake.png" alt="Uh oh, my image link is wrong :(" />
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">About Me</a>
+				<li><a href="#">Resume</a>
+				<li><a href="../blog/index.html">Blog</a>
+				<li><a href="#">Projects</a>
+				<li><a href="#">Contact</a>
+			</ul>
+		</nav>
+		
+		<main class="blog-post">
+	      <h4>CSS Positioning</h4>
+	      <p><b>What are the differences between relative, absolute, fixed, and static positioning?</b></p>
+	      <p>One of the big struggles I had this week was learning about the different positioning types and how to use them, so for my blog this week, I decided I'd give a shot to making positioning clear. Here's my attempt.</p>
+	      <p>First I think it's important to understand why this topic is even important. When thinking about any given page, a great way to start thinking about positioning is imagining a bunch of boxes floating around in space. They can be above, below, to the right or left of each other, or they can be on top of each other. Positioning is the way one would arrange their boxes so that they behave exactly how you'd expect. Surprisingly to me, this was actually pretty difficult.</p>
+	      <ul>
+	      	<li><b>Static</b>:  I think it makes sense to start with static, since it's the default value (if no other position value is specified.
+	      		<ul>
+	      			<li>For a given box in a sea of boxes, if there's no position "property" specified, the box will just go where it naturally goes in relation to everything else.</li>
+	      			<li>This could mean that it gets pushed to the right by another box, or gets bumped to another row.</li>
+	      			<li>It has a pretty low claim to occupy the space its in. Others can trump it. It just means that the box will show up where it's supposed to.</li>
+	      		</ul>
+	      	</li>
+	      	<li><b>Relative</b>:  Next in line is relative. If static is where a box is supposed to go, relative is where it's supposed to go -- plus or minus a few adjustments. 
+	      		<ul>
+	      			<li>When relative is selected as the position type, we now have the power to say things like "left: 50px" which means that it will get bumped from the left of its static position by 50 pixels.</li>
+	      			<li>I think the best explanation I read for this was that its just like static, but with adjustments</li>
+	      		</ul>
+	      	</li>	
+	      	<li><b>Absolute</b>:  Abslolute begins to have some power. An absolute position goes where it wants to go. 
+	      		<ul>
+	      			<li>The key element that's confusing about absolute is that it's still relative to other objects. In particular, it's relative to the first parent box.</li>
+	      			<li>So I think two examples can make this clear.
+	      			<ul>
+	      				<li>Example 1:  If a box has a parent box with positioning (that is, it's inside another box that has a position specicied) and you specify absolute positioning, the box will move relative to the parent box. So if you again say "left: 50px' but the parent box is already 50px left from the side of the page, the box will now be at 100px.</li>
+	      				<li>Example 2:  However, if the parent box doesn't have positioning, or the box being specified as absolute does not have a parent box, it will just be 50px from the left of the entire screen.</li>
+	      			</ul>
+	      			</li>
+	      		</ul>
+	      	</li>	
+	      	<li><b>Fixed</b>:  Finally, fixed! Fixed is perhaps the easiest to understand. It just goes where it wants all the time and stays there.
+	      		<ul>
+	      			<li>If we specify a box as fixed with "left: 50px" - the box will basically be 50px from the left side of the browser.</li>
+	      			<li>No matter what.</li>
+	      			<li>Even if you scroll, it hovers and stays there.</li>
+	      			<li>Try to imagine a really annoying advertisement that won't leave your screen. It's probably fixed.</li>
+	      		</ul>
+	      	</li>
+	      </ul>
+	      <p>And there you have it, the 4 key positioning elements! Hope that was helpful and clear, but if not, feel free to tell me where I'm wrong and where I can make things more clear.</p>
+		</main>
+
+		<!-- Footer -->
+
+		<footer>
+			<p>Too close for missiles, switching to guns.</p>
+			<p>Contact: 
+					<a href="mailto:dma315@gmail.com">Email</a>   
+					<a href="https://www.linkedin.com/profile/view?id=AAMAAAQdDl4BdWYDFCFvaKEWYEzS5YZcpiVqBM8&trk">LinkedIn</a>
+					<a href="https://www.facebook.com/dma315">Facebook</a>
+			</p>
+		</footer>	
+
+	</div>
+</body>
+
+</html>

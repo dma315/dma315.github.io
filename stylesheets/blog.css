@@ -2,7 +2,8 @@
 
 main {
 	padding: 20px 0px 20px 0px;
-	background-color: #A4B8D7;
+	background-color: #1B1E2B;
+	opacity: 0.80;
 }
 
 hr {
@@ -23,7 +24,7 @@ div {
 }
 
 .post p {
-	color: black;
+	color: white;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
@@ -38,24 +39,23 @@ div {
 }
 
 .post a:link {
-	color: black;
+	color: #F3D16A;
 }
 
 .post a:visited {
-	color: black;
+	color: #F3D16A;
 }
 
 .post a:hover {
-	color: #1B1E2B;
+	color: #F3D16A;
 	opacity: 0.8;
 }
 
 /* For actual blog posts */
 
 main.blog-post {
-	padding-left: 5%;
-	padding-right: 5%;
-	color: black;
+	padding: 3em 10% 3em 10%;
+	color: white;
 }
 
 main.blog-post p {
@@ -66,4 +66,24 @@ main.blog-post p {
 main ul, main ol {
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+div.title {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: #D5E9FF;
+	color: black;
+	opacity: 0.7;
+}
+
+.blog-post .emphasis {
+	color: #F3D16A;
+}
+
+span.important {
+	color: #F3D16A;
+	font-weight: bold;
 }
