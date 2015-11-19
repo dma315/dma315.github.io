@@ -8,10 +8,16 @@ p, h1, h2, h3, h4, h5. h6 {
 	margin-bottom: 1em;
 }
 
+body {
+	max-width: 1440px;
+	background-color: #484B55;
+	margin: 0px auto;
+}
+
 /* Header and Nav Bar */
 
 header {
-	margin: 0px;
+	margin: 0 auto;
 	position: relative;
 	width: 100%;
 }
@@ -210,6 +216,7 @@ footer {
 	padding: 20px 0px 20px 0px;
 	text-align: center;
 	opacity: 0.8;
+	font-size: 0.75em;
 }
 
 footer ul {
@@ -239,4 +246,62 @@ footer a:hover {
 	color: black;
 	border-bottom: 1px solid black;
 	opacity: 0.8;
+}
+
+/* Contact Page */
+
+div.contact {
+	width: 100%;
+	background-image: url("../imgs/chicago-lake.png");
+	background-position: center-bottom;
+	background-size: cover;
+	position: relative;
+}
+
+div.contact #overlay {
+	background-color: rgba(72,75,85,0.4);
+	/* #484B55 */
+}
+
+main.contact {
+	margin: auto;
+	width: 50%;
+	padding: 3em 10% 3em 10%;
+	text-align: center;
+	color: white;
+}
+
+main.contact figure {
+	margin: 0 auto;
+	padding: 0.5em;
+	vertical-align: middle;
+	width: 40%;
+	text-align: left;
+}
+
+main.contact figure#first {
+	margin-top: 2em;
+}
+
+main.contact p.handle {
+	margin-left: 1em;
+	vertical-align: middle;
+	font-size: 1em;
+	display: inline-block;
+}
+
+main.contact img {
+	vertical-align: middle;
+}
+
+main.contact a:link {
+	color: white;
+}
+
+main.contact a:visited {
+	color: white;
+}
+
+main.contact a:hover {
+	color: #F3D16A;
 }
