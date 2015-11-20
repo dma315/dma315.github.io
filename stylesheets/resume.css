@@ -1,0 +1,125 @@
+/* Styling on details / summary */
+
+details summary::-webkit-details-marker { 
+	display:none; 
+} /* Removes the arrow */
+
+
+details summary:focus {
+	outline: none;
+}
+
+/* Resume body */
+
+summary {
+	cursor: pointer;
+}
+
+main.resume {
+	background-color: #484B55;
+	color: white;
+}
+
+details {
+	position: relative;
+}
+
+details p, details ul {
+	margin: 1em;
+}
+
+details p.title {
+	font-size: 1.1em;
+}
+
+summary {
+	font-size: 1.25em;
+	padding: 3em;
+}
+
+span.job-headline {
+	position: absolute;
+	margin-left: 3em;
+	padding-top: 2.5em;
+}
+
+div.overlap {
+	color: white;
+	position: absolute;
+	margin-left: -3em;
+	top: 0;
+	height: 6em;
+	width: 100%;
+}
+
+div.resume-section {
+	padding: 1em;
+	background-color: #323440;
+	color: white;
+	font-size: 1.25em;
+}
+
+span.emphasis {
+	color: #F3D16A; /*Yellow*/
+	font-weight: bold;
+}
+
+/* Individual sections */
+
+div#contextmedia {
+	background-color: rgba(111,36,144,0.7);
+}
+
+summary#contextmedia {
+	background-image: url("../imgs/companies/cmh_office_small.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+div#bcg {
+	background-color: rgba(2,41,14,0.7);
+}
+
+summary#bcg {
+	background-image: url("../imgs/companies/bcg_office.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+div#gsb {
+	background-color: rgba(142,19,14,0.8);
+}
+
+summary#gsb {
+	background-image: url("../imgs/companies/gsb_campus_small.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+div#dbc {
+	background-color: rgba(0,171,182,0.8);
+}
+
+summary#dbc {
+	background-image: url("../imgs/companies/chi_bridge.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+div#nu {
+	background-color: rgba(64,27,106,0.8);
+}
+
+summary#nu {
+	background-image: url("../imgs/companies/nu_arch.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}

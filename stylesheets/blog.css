@@ -3,7 +3,6 @@
 main {
 	padding: 20px 0px 20px 0px;
 	background-color: #484B55;
-	opacity: 0.90;
 }
 
 hr {
@@ -100,4 +99,17 @@ code {
 	font-family: Times;
 	padding: 0.5em;
 	color: black;
+}
+
+a:link {
+	color: #F3D16A;
+}
+
+a:visited {
+	color: #F3D16A;
+}
+
+a:hover {
+	color: #F3D16A;
+	opacity: 0.8;
 }
