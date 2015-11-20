@@ -100,3 +100,16 @@ code {
 	padding: 0.5em;
 	color: black;
 }
+
+a:link {
+	color: #F3D16A;
+}
+
+a:visited {
+	color: #F3D16A;
+}
+
+a:hover {
+	color: #F3D16A;
+	opacity: 0.8;
+}

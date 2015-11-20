@@ -1,19 +1,35 @@
+/* Styling on details / summary */
+
 details summary::-webkit-details-marker { 
 	display:none; 
 } /* Removes the arrow */
 
-/*
+
 details summary:focus {
-	display: none;	
-} Removes the annoying blue border
-*/
+	outline: none;
+}
+
+/* Resume body */
+
+summary {
+	cursor: pointer;
+}
 
 main.resume {
-	background-color: white;
+	background-color: #484B55;
+	color: white;
 }
 
 details {
 	position: relative;
+}
+
+details p, details ul {
+	margin: 1em;
+}
+
+details p.title {
+	font-size: 1.1em;
 }
 
 summary {
@@ -43,6 +59,11 @@ div.resume-section {
 	font-size: 1.25em;
 }
 
+span.emphasis {
+	color: #F3D16A; /*Yellow*/
+	font-weight: bold;
+}
+
 /* Individual sections */
 
 div#contextmedia {
@@ -50,7 +71,7 @@ div#contextmedia {
 }
 
 summary#contextmedia {
-	background-image: url("../imgs/companies/cmh_office.jpg");
+	background-image: url("../imgs/companies/cmh_office_small.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
@@ -72,7 +93,7 @@ div#gsb {
 }
 
 summary#gsb {
-	background-image: url("../imgs/companies/gsb_campus.jpg");
+	background-image: url("../imgs/companies/gsb_campus_small.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
