@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css" />
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css" />
+</head>
+
+<body>
+
+  <!-- Header and Nav Bar -->
+  <header id="cover">
+  <nav>
+    <div id="name">Hi, I'm David Ma</div>
+    <div id="navlinks">
+      <ul>
+        <li><a href="../about.html">About Me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <div class="title">
+  DBC Week 6:  Ruby Classes
+  </div>
+
+  <main class="blog-post">
+    
+    <h4 class="emphasis">What are classes?</h4>
+    <p>Classes, like everything in Ruby, are <span class="emphasis">objects</span>. We can think of them as ways of separating out the world in Ruby. For example, the main data types we've been using are all different classes (e.g. strings, floats, fixnums, arrays, hashes, etc.).</p>
+    <p>Members of a class have different attributes and have methods that are avaiable to them, and often, unique to them.</p>
+    <p>For example, if we wanted to grab the keys for a hash, we could do that, because keys are <span class="emphasis">attributes</span> of the hash class. But, we could not grab the keys for strings, because strings don't have keys - that is, they aren't an attribute of strings. 
+    
+    <h4 class="emphasis">Why use classes?</h4>
+    <p>As mentioned, classes are great for separating the code world into things that are discrete and make sense to us. We ideally want them to have methods available to them as well that do special things only in that class.</p>
+    
+    <h4 class="emphasis">Creating a class</h4>
+    <p>To make a class is simple! We'll literally make a class (like school class) as an example, but we'll call it course to make it less confusing. To do this, we need start creating a class using the code below</p>
+    <pre><code>>>  class Course
+  >>  end</code></pre>
+    
+    <h4 class="emphasis">Initializing a class</h4>
+    <p>All right, so we now need to actually be able to create a class. To do this, we use a method "initialize" and we can pass a class arguments. In this case, we will say that a class should have a title, a number, and maybe some students. See the example below!</p>
+    <pre><code>>>  class Course
+  >>    def initialize(name, number, students)
+  >>      @name = name
+  >>      @number = number
+  >>      @students = students
+  >>      puts "The course is #{name}: #{number} and the students are:"
+  >>      puts students
+  >>    end
+  >>  end
+  >>
+  >>  chem101 = Course.new("Chemistry", 101, ['Jack','Sally'])
+  =>  The course is Chemistry: 101 and the students are:
+  =>  Jack
+  =>  Sally</code></pre>
+    <p>Notice the weird usage of the @ signs. These are called <span class="emphasis">instance variables</span>. What's powerful about these is that we will be able to use them later, whereas if we had just given them names without the @ sign, we wouldn't be able to reference them later. More on that in a minute, but first, attributes!</p>
+
+    <h4 class="emphasis">Attributes of a class</h4>
+    <p>So let's say we have chem101 defined now (I took out the puts, that was just for use in the previous example). What if we forgot the course name or what students were in it? We could make these instance variables accessible as methods, of course. To do this, we will use attr_accessor (note, we could use attr_reader or att_writer if we wanted, but for now, we will want all variables to be readable (reader) and editable (writer). See below:</p>
+    <pre><code>>>  class Course
+  >>    attr_accessor(:name, :number, :students) 
+  >>    
+  >>    def initialize(name, number, students)
+  >>      @name = name
+  >>      @number = number
+  >>      @students = students
+  >>    end
+  >>  end
+  >>
+  >>  chem101 = Course.new("Chemistry", 101, ["Jack", "Sally"])
+  >>  p chem101.name
+  =>  "Chemistry"
+  >>  p chem101.number
+  =>  101
+  >>  p chem101.students
+  =>  ["Jack","Sally"]</code></pre>
+    <p>How nice of Ruby to turn those instance variables into attribute methods!</p>
+    <p>What's also cool is that we can edit them. Say if we wanted to call it "Intro Chemistry" and add "Joe" to the class, we could do this.</p>
+    <pre><code>>>  chem101.name = "Intro Chemistry"
+  >>  p chem101.name
+  =>  "Intro Chemistry"
+  >> 
+  >>  chem101.students << "Joe"
+  >>  p chem101.students
+  =>  ["Jack", "Sally", "Joe"]</pre></code>
+
+    <h4 class="emphasis">Methods in a class</h4>
+    <p>Let's say that we are the teacher of the class, and that Jack isn't doing a very good job in chem101. Say we wanted to drop him from the class roster, we could do that by writing a method. We'll write a method that only accesses the students variable array (which we can do because it's an instance variable!) and drop the student specified in the argument.</p>
+    <pre><code>>>  class Course
+  >>    attr_accessor(:name, :number, :students) 
+  >>    
+  >>    def initialize(name, number, students)
+  >>      @name = name
+  >>      @number = number
+  >>      @students = students
+  >>    end
+  >>    
+  >>    def drop(member)
+  >>      @students = @students - [member]
+  >>    end
+  >>
+  >>  end
+  >>
+  >>  chem101 = Course.new("Chemistry", 101, ["Jack", "Sally"])
+  >>  chem101.students << "Joe"
+  >>  p chem101.students
+  =>  ["Jack", "Sally", "Joe"]
+  >>
+  >>  chem101.drop("Jack")
+  >>  p chem101.students
+  =>  ["Sally, "Joe"]
+</code></pre>
+
+    <h4 class="emphasis">Go forth!</h4>
+    <p>And that's it, an intro to classes in Ruby. There's a lot that can be done with Classes, so be sure to read the Ruby docs to learn more!</p>
+  </main>
+
+    <!-- Footer -->
+  <footer>
+    <p>This has been fun. No copyrights here yet.</p>
+  </footer>
+
+  </body>
+
+  </html>
