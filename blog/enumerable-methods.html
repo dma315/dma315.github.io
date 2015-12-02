@@ -21,7 +21,7 @@
         <li><a href="../about.html">About Me</a></li>
         <li><a href="../resume.html">Resume</a></li>
         <li><a href="../blog/index.html">Blog</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
     </div>
@@ -62,12 +62,14 @@
       <li>We also have to specify what exactly we are trying to group by. That is, what is the rule by which we are grouping.</li>
     </ul>
     <p>Say we have an example array below:</p>
-    <pre><code>>> integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code></pre>
+    <pre>
+<code>>> integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code></pre>
     <p>One thing we can do with group by is separate this set of numbers into evens and odds (is it divisible by 2 with no remainder, that is does n % 2 == 0). Here's how we'd do that and what it would output:</p>
-    <pre><code>>> even = integers.group_by {|i| i%2 == 0}
-  => {false=>[1, 3, 5, 7, 9], true=>[2, 4, 6, 8, 10]}
-  >> p even[true]
-  => [2, 4, 6, 8, 10]</code></pre>
+    <pre>
+<code>>> even = integers.group_by {|i| i%2 == 0}</code>
+<code>=> {false => [1, 3, 5, 7, 9], true => [2, 4, 6, 8, 10]}</code>
+<code>>> p even[true]</code>
+<code>=> [2, 4, 6, 8, 10]</code></pre>
   <p>Now go forth, imagine the possibilities!</p>
   </main>
 
