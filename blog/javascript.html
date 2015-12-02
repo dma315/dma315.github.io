@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>JavaScript vs. Ruby</title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css" />
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css" />
+</head>
+
+<body>
+
+  <!-- Header and Nav Bar -->
+  <header id="cover">
+  <nav>
+    <div id="name">Hi, I'm David Ma</div>
+    <div id="navlinks">
+      <ul>
+        <li><a href="../about.html">About Me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <div class="title">
+  DBC Week 7:  JavaScript vs. Ruby
+  </div>
+
+  <main class="blog-post">
+    
+    <h4 class="emphasis">Iterating in Ruby</h4>
+    <p>One of my favorite features of Ruby so far has been the simplicity of iterating through an array (or hash). We have a very powerful method <span class="emphasis">.each</span> that will go through every element in an array or hash. This is extremely powerful and we can do a lot of things with it. For example, we can add 2 to each element of an array and print it:</p>
+    <pre>
+<code>>>  array = [1, 2, 3, 4, 5]</code>
+<code>>>  array.each { |i| p i + 2}</code>
+<code>=>  3</code>
+<code>=>  4</code>
+<code>=>  5</code>
+<code>=>  6</code>
+<code>=>  7</code></pre>
+    
+    <h4 class="emphasis">Iterating in JavaScript</h4>
+    <p>JavaScript isn't quite as nice to us. While jQuery (a popular JavaScript library) allows an each method, JavaScript itself doesn't appear to give us this nice native functionality. Instead, we have to essentially make our own each method, or iterate through every element of the array. We can do this using a for loop.</p>
+    <pre>
+<code>>>  var array = [1, 2, 3, 4, 5]</code>
+<code>>>  for (var i = 0; i < array.length; i++) {console.log(array[i]+2})</code>
+<code>=>  3</code>
+<code>=>  4</code>
+<code>=>  5</code>
+<code>=>  6</code>
+<code>=>  7</code></pre>
+    <p>The nice thing here is that JavaScript provides a very simple way of writing for loops, but in this case, we have to manually define how many times we go through the loop (or iterate).</p>
+    <p>A breakdown of the for statement's components:</p>
+      <ol>
+        <li><span class="emphasis">Define an index</span>: "For" a variable that we'll call i</li>
+        <li><span class="emphasis">Set the iteration limit</span>: Keep looping "while" i is less than the array's length (in this case 5). That is loop for i = 0, and keep going until i = 4 (but not 5, since indexes start at 0 in JS as well).</li>
+        <li><span class="emphasis">Increment our index</span>: For each loop, add 1 to i (i++ is just shorthand for i += 1, which is shorthand for i = i + 1. Programmers love shortcuts...</li>
+      </ol>
+    
+    <h4 class="emphasis">Conclusion</h4>
+    <p>If there's one thing worth taking away here, it's that we can really take for granted how much easier our lives have been made by advancements in programming languages. Personally, I didn't really have a solid understanding of how and when to use for loops in Ruby, and learning JavaScript has helped solidify its purpose and what it does, namely break down something like the .each method.</p>
+  </main>
+
+    <!-- Footer -->
+  <footer>
+    <p>This has been fun. No copyrights here yet.</p>
+  </footer>
+
+  </body>
+
+  </html>
