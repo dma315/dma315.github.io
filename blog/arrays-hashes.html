@@ -37,25 +37,31 @@
     <h4 class="emphasis">What are arrays and hashes?</h4>
     <p>This week we spent some time diving into the basics of arrays and hashes. While still early in our education, it's becoming increasingly clear that we'll need to understand both concepts, so here's a shot at explaining them. Before getting into differences, it's probably best to get into similarities (because you know...when you compare things, usually they share similarities).</p>
     <p>Arrays and hashes are both used to store a bunch of objects together. For example, let's say we're storing fruits. One way we can do this is to use a variable, where we set <span class="emphasis">fruit</span> to save the string of "apple", like below:</p>
-    <pre><code>>> fruit = "apple"</code></pre>
+    <pre>
+ <code>>> fruit = "apple"</code></pre>
     <p>This is cool, but in the event that we want to save multiple fruits, a variable isn't going to help too much with that. We could store multiple variables like below:</p>
-    <pre><code>>> fruit0 = "apple"
-  >> fruit1 = "orange"
-  >> fruit2 = "banana"</code></pre>
+    <pre>
+ <code>>> fruit0 = "apple"</code>
+ <code>>> fruit1 = "orange"</code>
+ <code>>> fruit2 = "banana"</code></pre>
     <p>Feels kind of imcomplete, doesn't it? Here's where arrays come in. An <span class="emphasis">array</span> will store them as a collection, essentially grouped together. We could store as many fruits as we want.</p>
-    <pre><code>>> fruits = ["apple","orange","banana","grape","tomato"]</code></pre>
+    <pre>
+ <code>>> fruits = ["apple","orange","banana","grape","tomato"]</code></pre>
     <p>What's powerful about this is that we can retrieve items from the array, like this:</p>
-    <pre><code>>> return fruits[0]
-  => "apple"
-  >> return fruits[2]
-  => "banana"</code></pre>
+    <pre>
+ <code>>> return fruits[0]</code>
+ <code>=> "apple"</code>
+ <code>>> return fruits[2]</code>
+ <code>=> "banana"</code></pre>
     <p>So how about hashes? <span class="emphasis">Hashes</span> will allow us to store even more information, for example, storing our fruit inventory. Hashes give us <span class="emphasis">pairs</span> of things we can store, where the first is the <span class="emphasis">key</span> and the second is the <span class="emphasis">value.</span></p>
-    <pre><code>>> fruits = {apple: 3, orange: 2, banana: 1, grape: 50, tomato: 0}</code></pre>
+    <pre>
+ <code>>> fruits = {apple: 3, orange: 2, banana: 1, grape: 50, tomato: 0}</code></pre>
     <p>...which then allows us to retrieve inventory like this:</p>
-    <pre><code>>> fruits[:apple]
-  => 3
-  >> fruits[:tomato]
-  => 0</code></pre>
+    <pre>
+ <code>>> fruits[:apple]</code>
+ <code>=> 3</code>
+ <code>>> fruits[:tomato]</code>
+ <code>=> 0</code></pre>
     <h4 class="emphasis">So what's really the difference?</h4>
     <p>Arrays and hashes in Ruby are both ordered, but one good way to think of an array is an ordered list, where the order is saved as the position they are in the array. In the example above, we looked for fruit #0 to get apple.</p>
     <p>A hash on the other hand is also ordered, but only in the sense that the items stored in the hash are stored in the order we put them there. But we probably can't remember when we put apple in the hash, so we are simply looking to retrieve apple from the list. We can treat it as if it were unordered.</p>

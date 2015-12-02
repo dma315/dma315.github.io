@@ -44,82 +44,86 @@
     
     <h4 class="emphasis">Creating a class</h4>
     <p>To make a class is simple! We'll literally make a class (like school class) as an example, but we'll call it course to make it less confusing. To do this, we need start creating a class using the code below</p>
-    <pre><code>>>  class Course
-  >>  end</code></pre>
+    <pre>
+<code>>>  class Course</code>
+<code>>>  end</code></pre>
     
     <h4 class="emphasis">Initializing a class</h4>
     <p>All right, so we now need to actually be able to create a class. To do this, we use a method "initialize" and we can pass a class arguments. In this case, we will say that a class should have a title, a number, and maybe some students. See the example below!</p>
-    <pre><code>>>  class Course
-  >>    def initialize(name, number, students)
-  >>      @name = name
-  >>      @number = number
-  >>      @students = students
-  >>      puts "The course is #{name}: #{number} and the students are:"
-  >>      puts students
-  >>    end
-  >>  end
-  >>
-  >>  chem101 = Course.new("Chemistry", 101, ['Jack','Sally'])
-  =>  The course is Chemistry: 101 and the students are:
-  =>  Jack
-  =>  Sally</code></pre>
+    <pre>
+<code>>>  class Course</code>
+<code>>>    def initialize(name, number, students)</code>
+<code>>>      @name = name</code>
+<code>>>      @number = number</code>
+<code>>>      @students = students</code>
+<code>>>      puts "The course is #{name}: #{number} and the students are:"</code>
+<code>>>      puts students</code>
+<code>>>    end</code>
+<code>>>  end</code>
+<code>>></code>
+<code>>>  chem101 = Course.new("Chemistry", 101, ['Jack','Sally'])</code>
+<code>=>  The course is Chemistry: 101 and the students are:</code>
+<code>=>  Jack</code>
+<code>=>  Sally</code></pre>
     <p>Notice the weird usage of the @ signs. These are called <span class="emphasis">instance variables</span>. What's powerful about these is that we will be able to use them later, whereas if we had just given them names without the @ sign, we wouldn't be able to reference them later. More on that in a minute, but first, attributes!</p>
 
     <h4 class="emphasis">Attributes of a class</h4>
     <p>So let's say we have chem101 defined now (I took out the puts, that was just for use in the previous example). What if we forgot the course name or what students were in it? We could make these instance variables accessible as methods, of course. To do this, we will use attr_accessor (note, we could use attr_reader or att_writer if we wanted, but for now, we will want all variables to be readable (reader) and editable (writer). See below:</p>
-    <pre><code>>>  class Course
-  >>    attr_accessor(:name, :number, :students) 
-  >>    
-  >>    def initialize(name, number, students)
-  >>      @name = name
-  >>      @number = number
-  >>      @students = students
-  >>    end
-  >>  end
-  >>
-  >>  chem101 = Course.new("Chemistry", 101, ["Jack", "Sally"])
-  >>  p chem101.name
-  =>  "Chemistry"
-  >>  p chem101.number
-  =>  101
-  >>  p chem101.students
-  =>  ["Jack","Sally"]</code></pre>
+    <pre>
+<code>>>  class Course</code>
+<code>>>    attr_accessor(:name, :number, :students) </code>
+<code>>>    </code>
+<code>>>    def initialize(name, number, students)</code>
+<code>>>      @name = name</code>
+<code>>>      @number = number</code>
+<code>>>      @students = students</code>
+<code>>>    end</code>
+<code>>>  end</code>
+<code>>></code>
+<code>>>  chem101 = Course.new("Chemistry", 101, ["Jack", "Sally"])</code>
+<code>>>  p chem101.name</code>
+<code>=>  "Chemistry"</code>
+<code>>>  p chem101.number</code>
+<code>=>  101</code>
+<code>>>  p chem101.students</code>
+<code>=>  ["Jack","Sally"]</code></pre>
     <p>How nice of Ruby to turn those instance variables into attribute methods!</p>
     <p>What's also cool is that we can edit them. Say if we wanted to call it "Intro Chemistry" and add "Joe" to the class, we could do this.</p>
-    <pre><code>>>  chem101.name = "Intro Chemistry"
-  >>  p chem101.name
-  =>  "Intro Chemistry"
-  >> 
-  >>  chem101.students << "Joe"
-  >>  p chem101.students
-  =>  ["Jack", "Sally", "Joe"]</pre></code>
+    <pre>
+<code>>>  chem101.name = "Intro Chemistry"</code>
+<code>>>  p chem101.name</code>
+<code>=>  "Intro Chemistry"</code>
+<code>>> </code>
+<code>>>  chem101.students << "Joe"</code>
+<code>>>  p chem101.students</code>
+<code>=>  ["Jack", "Sally", "Joe"]</pre></code>
 
     <h4 class="emphasis">Methods in a class</h4>
     <p>Let's say that we are the teacher of the class, and that Jack isn't doing a very good job in chem101. Say we wanted to drop him from the class roster, we could do that by writing a method. We'll write a method that only accesses the students variable array (which we can do because it's an instance variable!) and drop the student specified in the argument.</p>
-    <pre><code>>>  class Course
-  >>    attr_accessor(:name, :number, :students) 
-  >>    
-  >>    def initialize(name, number, students)
-  >>      @name = name
-  >>      @number = number
-  >>      @students = students
-  >>    end
-  >>    
-  >>    def drop(member)
-  >>      @students = @students - [member]
-  >>    end
-  >>
-  >>  end
-  >>
-  >>  chem101 = Course.new("Chemistry", 101, ["Jack", "Sally"])
-  >>  chem101.students << "Joe"
-  >>  p chem101.students
-  =>  ["Jack", "Sally", "Joe"]
-  >>
-  >>  chem101.drop("Jack")
-  >>  p chem101.students
-  =>  ["Sally, "Joe"]
-</code></pre>
+    <pre>
+<code>>>  class Course</code>
+<code>>>    attr_accessor(:name, :number, :students) </code>
+<code>>>    </code>
+<code>>>    def initialize(name, number, students)</code>
+<code>>>      @name = name</code>
+<code>>>      @number = number</code>
+<code>>>      @students = students</code>
+<code>>>    end</code>
+<code>>>    </code>
+<code>>>    def drop(member)</code>
+<code>>>      @students = @students - [member]</code>
+<code>>>    end</code>
+<code>>></code>
+<code>>>  end</code>
+<code>>></code>
+<code>>>  chem101 = Course.new("Chemistry", 101, ["Jack", "Sally"])</code>
+<code>>>  chem101.students << "Joe"</code>
+<code>>>  p chem101.students</code>
+<code>=>  ["Jack", "Sally", "Joe"]</code>
+<code>>></code>
+<code>>>  chem101.drop("Jack")</code>
+<code>>>  p chem101.students</code>
+<code>=>  ["Sally, "Joe"]</code></pre>
 
     <h4 class="emphasis">Go forth!</h4>
     <p>And that's it, an intro to classes in Ruby. There's a lot that can be done with Classes, so be sure to read the Ruby docs to learn more!</p>
