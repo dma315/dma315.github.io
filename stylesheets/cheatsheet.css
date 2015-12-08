@@ -1,0 +1,37 @@
+body {
+	background-color: blue;
+	background-color: #484B55;
+	font-family: 'Cabin', sans-serif;
+	color: white;
+	width: 80%;
+	margin: 1em auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0em;
+}
+
+hr {
+	border-color: #F3D16A;
+	margin: 2em 0em 2em 0em;
+}
+
+section {
+	border: 1px dashed white;
+	padding: 1em;
+	margin: 1em;
+}
+
+pre {
+	background-color: #F3D16A;
+	opacity: 0.7;
+	width: 80%;
+	margin: auto;
+	padding: 1em 0em 1em 0em;
+	color: black;
+	white-space: pre-wrap;
+}
+
+a:link, a:visited {
+	color: #F3D16A;
+}
