@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>JavaScript vs. Ruby</title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css" />
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css" />
+</head>
+
+<body>
+
+  <!-- Header and Nav Bar -->
+  <header id="cover">
+  <nav>
+    <div id="name">Hi, I'm David Ma</div>
+    <div id="navlinks">
+      <ul>
+        <li><a href="../about.html">About Me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <div class="title">
+  DBC Week 8:  What is Rails?
+  </div>
+
+  <main class="blog-post">
+    
+    <h4 class="emphasis">And the topic is: Rails!</h4>
+    <p>For this week's topic, we had a multitude of options to research and write on. Not surprisingly, I chose Rails, since it appears to be where all the "buzz" is, kind of like Steph Curry in basketball right now.</p>
+
+    <h4 class="emphasis">Rails is a framework for web app development</h4>
+    <p>Follow up question, what's a <span class="emphasis">framework?</span></p>
+    <p>Wikipedia uses some fancy words for this like "abstraction" that don't make a ton of sense for somebody who speaks regular English, so we'll try some other words. In short, a software framework is a <span class="emphasis">standardized way of thinking</span> when it comes to building "something."</p>
+    <p>The "something" in this case is a web application (different from a webpage). The people who developed Rails had very specific ideas on how web applications should be written, so they developed Rails so that others could follow in their footsteps.</p>
+    <p>And finally, the reason we call it Ruby on Rails, is because we need to write Ruby to utilize the power of Rails.</p>
+
+    <h4 class="emphasis">But what does it do?</h4>
+    <p>In the fewest words possible, it makes building web apps faster.</p>
+    <p>The Rails documentation talks a lot about Rails being <span class="emphasis">opinionated</span>. That is, the folks who developed Rails have a specific idea of what best practice means when it comes to developing a web application, and have created <span class="emphasis">shortcuts</span> to help make building web apps very quick and efficient.</p>
+    <p>An example of this might be that they assume the web app will need to interact with a SQL database, and interact with the SQL database in a specific, and <span class="emphasis">prescriptive</span> way. As a result, they've pre-written a bunch of code that makes it easier for our web-app to interact with a database, with the key caveat being that we are going to have to interact with the database in the way that they want us to.</p>
+
+    <h4 class="emphasis">So how does this make things that we see on the internet</h4>
+    <p>So far, we've learned that there are 3 major components of a webpage (major paraphrasing here):</p>
+    <ul>
+      <li><span class="emphasis">HTML</span>:  Puts words and pictures on a page</li>
+      <li><span class="emphasis">CSS</span>:  Dresses up those words, puts them in boxes, and tells the boxes where to be on a page</li>
+      <li><span class="emphasis">JavaScript</span>:  Helps animate, change words, and move boxes around dynamically</li>
+    </ul>
+    <p>And here's where Rails comes in:</p>
+    <ol>
+      <li>You go to a web page (www.something.com)</li>
+      <li>www.something.com sends a request to a <span class="emphasis">server</span> (far far away) asking for what it needs to show you.</li>
+      <li>The server <span class="emphasis">uses Rails to compile HTML / CSS / JS snippets into full web pages</span> that it send back to your browser (the <span class="emphasis">client</span>) for you to view</li>
+    </ol>
+
+    <h4 class="emphasis">That sounds kind of inefficient!</h4>
+    <p>Maybe it is, but the key here is that web applications are VERY complex. There are lot of moving pieces that are tough to handle on the client side (your browser). Think about any web app and how much they need to think about - from login and user information, dealing with live social media streams, to merchant engines for buying things, maybe a chat functionality...and so on.</p>
+    <p>Furthermore, browsers are a bit stupid (scathing!) in that they can only read HTML, CSS, and JS, likely so that they don't crash trying to do too much.</p>
+    <p>It actually becomes faster to route all of the heavy lifting to a remote server to think about what pages to show you the user.</p>
+    <span class="emphasis"><p>Ruby does the lifting...</p>
+    <p>...and Rails are the steroids.</p></span>
+
+    
+    <h4 class="emphasis">Conclusion</h4>
+    <p>The takeaway here is that Rails has become immensely popular because of how quickly developers can take concept and put it on the internet with a wide range of features. Because it's opinionated, there are streamlined "best practice" ways to do things that don't require building a lot of extra support functionality because it's been done for you! I'm very excited to start learning Rails, to say the least.</p>
+    <p>For some great reading on this topic, check out:  <a href="http://railsapps.github.io/what-is-ruby-rails.html">This link</a></p>
+  </main>
+
+    <!-- Footer -->
+  <footer>
+    <p>This has been fun. No copyrights here yet.</p>
+  </footer>
+
+  </body>
+
+  </html>
