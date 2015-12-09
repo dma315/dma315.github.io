@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Test Website</title>
+	<meta charset="UTF 8">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="main-page.css">
+</head>
+
+<body>
+  <div id="main-container" class="container">
+  </div>
+
+  
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>  
+
+  $.getJSON('items.json', function(data) {  
+    var output='';
+    for (var i in items) {
+      output += '<div class="tile">'
+        + '<div class="image-box"><img src="' + items[i].img + '"></div>'
+        + '<p class="name">' + items[i].name + '</p>'
+        + '<p class="description">' + items[i].description + '</p>'
+        + '<p class="price">$' + items[i].price.toFixed(2) + '</p>'
+        + '<a href="' + items[i].link + '" target="_blank"><table><td class="buy-button">Click to buy! &raquo;</td></table></a>'
+        + '</div>' 
+    }
+  });
+
+  document.getElementById("main-container").innerHTML=output;
+
+  </script>
+
+</body>
+
+</html>
+
