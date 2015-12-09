@@ -18,7 +18,7 @@
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script>  
 
-  $.getJSON('items.json', function(data) {  
+  $.getJSON('https://github.com/dma315/dma315.github.io/blob/master/projects/makemoney/items.json', function(data) {  
     var output='';
     for (var i in items) {
       output += '<div class="tile">'
@@ -28,10 +28,11 @@
         + '<p class="price">$' + items[i].price.toFixed(2) + '</p>'
         + '<a href="' + items[i].link + '" target="_blank"><table><td class="buy-button">Click to buy! &raquo;</td></table></a>'
         + '</div>' 
-    }
+    }  
+  document.getElementById("main-container").innerHTML=output;  
   });
 
-  document.getElementById("main-container").innerHTML=output;
+  
 
   </script>
 
