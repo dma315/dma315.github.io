@@ -19,19 +19,18 @@
   <script>  
 
   $.getJSON('items.json', function(items) {  
+     var output='';
      for (var i in items) {
-       var output='';	
-       output = '<div class="tile">'
+       output += '<div class="tile">'
          + '<div class="image-box"><img src="' + items[i].img + '"></div>'
          + '<p class="name">' + items[i].name + '</p>'
          + '<p class="description">' + items[i].description + '</p>'
          + '<p class="price">$' + items[i].price.toFixed(2) + '</p>'
          + '<a href="' + items[i].link + '" target="_blank"><table><td class="buy-button">Click to buy! &raquo;</td></table></a>'
          + '</div>';
-       console.log(output);
-       document.getElementById("main-container").innerHTML=output;    
      };  
-  
+     console.log(output);
+     document.getElementById("main-container").innerHTML=output;
   });
 
   
