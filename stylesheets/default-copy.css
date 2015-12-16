@@ -47,7 +47,7 @@ div.relative-container {
 
 div.relative-container > div.table-container {
   height: 100%;
-  width: 100%;
+  margin: 0 auto;
   display: table;
 }
 
@@ -93,16 +93,34 @@ div {
   transition: 0.3s;
 }
 
-div.hover-box:hover div.opacity {
-  opacity: 0.2;
+div.relative-container {
+  -webkit-transition: 0.0s;
+  transition: 0.0s;
 }
 
-div.hover-box:hover div.index-tile {
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1)
+
+/* Link effects */
+
+.hover-box a:link, .hover-box a:hover, .hover-box a:visited {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 1.5em;
+}
+
+/* Button */
+
+div.index-button {
+  border: 1px solid white;
+  width: 175px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+div.index-button:hover {
+  color: black;
+  background-color: #F8F8F8;
+  opacity: 0.8;
+  border: 1px solid black;
 }
 
 /* Background images for tiles */
