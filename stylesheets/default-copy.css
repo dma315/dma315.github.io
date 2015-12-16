@@ -2,15 +2,131 @@ html, body {
   height: 100%;
 }
 
-div.index-container {
-  height: 100%;
+* {
+  font-family: Cabin;
 }
 
-div.index-row {
-  height: 50%;
+/* Create flexbox container and child objects, with responsivenes */
+
+div.index-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div.hover-box {
+  min-height: 100px;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 div.index-tile {
-  background-color: blue;
+  width: 100%;
+  flex: 1 100%;
+  background-size: cover;
+  display: flex;
+}
+
+div.opacity {
+  background-color: black;
+  flex: 1 100%;
+  opacity: 0.6;
+}
+
+/* Add Centered Text -- I hate that CSS makes me do this... */
+
+div.relative-container {
+  position: absolute;
   height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+div.relative-container > div.table-container {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+div.relative-container > div.table-container > div.table-cell {
+  vertical-align: middle;
+  display: table-cell;
+  height: 100%;
+  text-align: center;
+}
+
+div.relative-container > div.table-container > div.table-cell > p {
+  color: #F8F8F8;
+  font-size: 1.5em;
+}
+
+/* Add in Media Queries for Responsiveness */
+
+@media all and (min-width: 800px) {
+  div.hover-box {
+    flex: 1 33.3333333%;
+    background-position: bottom;
+  }
+
+  div.index-tile {
+    background-position: bottom;
+  }
+}
+
+@media all and (max-width: 800px) {
+  div.hover-box {
+    flex: 1 100%;
+  }
+
+  div.index-tile {
+    background-position: center;
+  }
+}
+
+/* Hover Effects */
+
+div {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+div.hover-box:hover div.opacity {
+  opacity: 0.2;
+}
+
+div.hover-box:hover div.index-tile {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1)
+}
+
+/* Background images for tiles */
+
+div#tile-1 {
+  background-image: url("../imgs/trees/door-county.jpg");
+}
+
+div#tile-2 {
+  background-image: url("../imgs/trees/grayton-beach.jpg");
+}
+
+div#tile-3 {
+  background-image: url("../imgs/trees/london-hyde-park.jpg");
+}
+
+div#tile-4 {
+  background-image: url("../imgs/trees/wellington-backyard.jpg");
+}
+
+div#tile-5 {
+  background-image: url("../imgs/trees/breck-3.jpg");
+}
+
+div#tile-6 {
+  background-image: url("../imgs/trees/elk-grove.jpg");
 }
