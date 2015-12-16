@@ -105,6 +105,14 @@ div.hover-box:hover div.index-tile {
   transform: scale(1.1, 1.1)
 }
 
+/* Link effects */
+
+.hover-box a:link, .hover-box a:hover, .hover-box a:visited {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 1.5em;
+}
+
 /* Background images for tiles */
 
 div#tile-1 {
