@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+div.index-container {
+  height: 100%;
+}
+
+div.index-row {
+  height: 50%;
+}
+
+div.index-tile {
+  background-color: blue;
+  height: 100%;
+}
