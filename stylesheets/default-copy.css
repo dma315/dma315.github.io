@@ -45,20 +45,20 @@ div.relative-container {
   z-index: 10;
 }
 
-div.relative-container > div.table-container {
+div.table-container {
   height: 100%;
   margin: 0 auto;
   display: table;
 }
 
-div.relative-container > div.table-container > div.table-cell {
+div.table-container > div.table-cell {
   vertical-align: middle;
   display: table-cell;
   height: 100%;
   text-align: center;
 }
 
-div.relative-container > div.table-container > div.table-cell > p {
+div.table-container > div.table-cell > p {
   color: #F8F8F8;
   font-size: 1.5em;
 }
