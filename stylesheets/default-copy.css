@@ -6,6 +6,10 @@ html, body {
   font-family: Cabin;
 }
 
+.navbar {
+  margin-bottom: 0px;
+}
+
 /* Create flexbox container and child objects, with responsivenes */
 
 div.index-container {
