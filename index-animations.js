@@ -1,9 +1,9 @@
 
 var links = {
   "tile-1": ["hi, i'm david ma","index.html"],
-  "tile-2": ["about me", "about.html"],
-  "tile-3": ["contact me", "contact.html"],
-  "tile-4": ["resume", "resume.html"],
+  "tile-2": ["about me", "about/about.html"],
+  "tile-3": ["contact me", "contact/contact.html"],
+  "tile-4": ["resume", "resume/resume.html"],
   "tile-5": ["projects","projects/index.html"],
   "tile-6": ["blog","blog/index.html"]
 }
