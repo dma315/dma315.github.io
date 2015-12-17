@@ -8,7 +8,7 @@ var links = {
   "tile-6": ["blog","blog/index.html"]
 }
 
-$("div.hover-box").mouseenter(
+$("div.hover-box").on("mouseenter click",
     function() {
       var linkKey = $("div.index-tile",this).attr('id');
       $("div.table-cell", this).html('<a href="' + links[linkKey][1] + '"><div class="index-button">' + links[linkKey][0] + '</div></a>');
@@ -22,7 +22,7 @@ $("div.hover-box").mouseenter(
       })
     });
 
-$("div.hover-box").mouseleave(
+$("div.hover-box").on("mouseleave click",
     function() { 
       var linkKey2 = $("div.index-tile",this).attr('id');
       $("a", this).html('<p>' + links[linkKey2][0] + '</p>');
