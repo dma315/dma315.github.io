@@ -1,0 +1,307 @@
+* {
+	margin: 0px;
+	font-family: 'Cabin', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5. h6 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+body {
+	max-width: 1440px;
+	background-color: #484B55;
+	margin: 0px auto;
+}
+
+/* Header and Nav Bar */
+
+header {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+
+header#cover {
+	width: 100%;
+	height: 350px;
+	background-image: url("../imgs/2014-tree-lights.jpeg");
+	background-size: cover;
+	background-position: center 90%;
+}
+
+nav {
+	background-color: #F3D16A;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 100;
+	opacity: 0.8;
+	color: black;
+}
+
+div#name {
+	float: left;
+	margin: 10px;
+	padding: 5px;
+}
+
+div#navlinks {
+	float: right;
+	margin: 10px;
+	padding: 5px;
+}
+
+div#navlinks li {
+	display: inline;
+	padding: 10px;
+}
+
+div#navlinks a:link {
+	text-decoration: none;
+	color: black;
+}
+
+div#navlinks a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+div#navlinks a:hover {
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid black;
+	opacity: 0.8;
+}
+
+/* 6 tiles base formatting */
+
+main.boxes {
+	position: relative;
+}
+
+main ul.tile {
+	text-align: center;
+	padding: 0px;
+	background-color: #323440;
+	color: black;
+}
+
+main ul.tile li {
+	width: 33.33%;
+	height: 300px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Image boxes */
+
+li#box2 {
+	background-image: url("../imgs/2012-pcb.jpg");
+	background-size: cover;
+	background-position: center 0%;
+}
+
+li#box4 {
+	background-image: url("../imgs/2015-london-trees.jpg");
+	background-size: cover;
+	background-position: center 75%;
+}
+
+li#box6 {
+	background-image: url("../imgs/2014-breck-trees.jpg");
+	background-size: cover;
+	background-position: center 80%;
+}
+
+
+/* Text Boxes */
+
+li.text {
+	color: white;
+}
+
+.table-wrapper {
+	display: table;
+	height: 300px;	
+	width: 100%;
+}
+
+.who {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.who p {
+	font-size: 1.5em;
+	color: #F3D16A;
+}
+
+/* Image overlays */
+
+li .image-overlay {
+	width: 101%;
+	height: 300px;
+	background-color: #D5E9FF;
+	opacity: 0.8;
+	display: table;
+	visibility: hidden;
+}
+
+.description { /* Uused also for text overlaps */
+	z-index: 100;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.description p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#box2:hover .image-overlay, #box4:hover .image-overlay, #box6:hover .image-overlay {
+	visibility: visible;
+}
+
+/* Text overlays - god this was a pain and such a hack, I'm sorry */
+
+.table-wrapper .description {
+	height: 300px;
+	background-color: #D5E9FF;
+	color: black;
+	display: table-cell;
+	visibility: hidden;
+	padding: 0%;
+}
+
+.table-wrapper .description p {
+	width: 0px;
+	visibility: hidden;
+	font-size: 0em;
+}
+
+.table-wrapper:hover .description {
+	visibility: visible;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.table-wrapper:hover .description p {
+	width: 100%;
+	visibility: visible;
+	font-size: 1em;
+}
+
+.table-wrapper:hover .who {
+	visibility: hidden;
+	width: 0px;
+}
+
+.table-wrapper:hover .who p {
+	visibility: hidden;
+	width: 0px;
+}
+
+/* Footer */
+
+footer {
+	height: 20px;
+	background-color: #F3D16A;
+	color: black;
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+	opacity: 0.8;
+	font-size: 0.75em;
+}
+
+footer ul {
+	padding: 0px;
+}
+
+footer li {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;	
+	font-size: 0.75em;
+	width: 60px;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+	opacity: 0.8;
+}
+
+/* Contact Page */
+
+div.contact {
+	width: 100%;
+	background-image: url("../imgs/chicago-lake.jpg");
+	background-position: center-bottom;
+	background-size: cover;
+	position: relative;
+}
+
+div.contact #overlay {
+	background-color: rgba(72,75,85,0.4);
+	/* #484B55 */
+}
+
+main.contact {
+	margin: auto;
+	width: 50%;
+	padding: 3em 10% 3em 10%;
+	text-align: center;
+	color: white;
+}
+
+main.contact figure {
+	margin: 0 auto;
+	padding: 0.5em;
+	vertical-align: middle;
+	width: 40%;
+	text-align: left;
+}
+
+main.contact figure#first {
+	margin-top: 2em;
+}
+
+main.contact p.handle {
+	margin-left: 1em;
+	vertical-align: middle;
+	font-size: 1em;
+	display: inline-block;
+}
+
+main.contact img {
+	vertical-align: middle;
+}
+
+main.contact a:link {
+	color: white;
+}
+
+main.contact a:visited {
+	color: white;
+}
+
+main.contact a:hover {
+	color: #F3D16A;
+}
