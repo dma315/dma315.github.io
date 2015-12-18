@@ -4,6 +4,8 @@
 
 body {
 	background-color: #262626;
+	background-image: url("../imgs/congruent_outline.png");
+	background-repeat: repeat;
 	color: #F8F8F8;
 }
 
