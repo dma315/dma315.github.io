@@ -2,6 +2,11 @@
 	font-family: Cabin, sans-serif;
 }
 
+body {
+	background-color: #262626;
+	color: #F8F8F8;
+}
+
 /* Styling on details / summary */
 
 details summary::-webkit-details-marker { 
@@ -106,13 +111,13 @@ details summary::-webkit-details-marker {
 
 	div.resume-section {
 		padding: 1em;
-		background-color: #323440;
-		color: white;
+		background-color: #1a1a1a;
+		color: #e6e6e6;
 		font-size: 1.25em;
 	}
 
 	span.emphasis {
-		color: #F3D16A; /*Yellow*/
+		color: white; /*Dark Blue*/
 		font-weight: bold;
 	}
 
