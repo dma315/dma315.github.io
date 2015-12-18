@@ -86,7 +86,7 @@ div.table-container > div.table-cell > p {
   }
 
   div.index-tile {
-    background-position: center;
+    background-position: 50% 60%;
   }
 }
 
@@ -167,4 +167,50 @@ div#tile-5 {
 
 div#tile-6 {
   background-image: url("../imgs/trees/elk-grove.jpg");
+}
+
+/* Background images for contact tiles */
+
+div#contact-1 {
+  background-image: url("../imgs/cities/chi-1.jpg");
+}
+
+div#contact-2 {
+  background-image: url("../imgs/cities/chi-2.jpg");
+}
+
+div#contact-3 {
+  background-image: url("../imgs/cities/chi-3.jpg");
+}
+
+div#contact-4 {
+  background-image: url("../imgs/cities/chi-4.jpg");
+}
+
+div#contact-5 {
+  background-image: url("../imgs/cities/chi-5.jpg");
+}
+
+div#contact-6 {
+  background-image: url("../imgs/cities/chi-6.jpg");
+}
+
+img.media-icon {
+  position: relative;
+  top: -32px;
+  z-index: 10;
+}
+
+div.media-overlay {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 100%;
+  top: 16px;
+}
+
+div.index-tile:hover div.media-overlay {
+  background-color: #000033;
+  opacity: 0.8;
 }
