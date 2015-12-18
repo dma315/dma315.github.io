@@ -1,0 +1,121 @@
+/* Blog index elements */
+
+main {
+	padding: 20px 0px 20px 0px;
+	background-color: #484B55;
+}
+
+hr {
+	height: 0px;
+	border-top: 1px solid #1B1E2B;
+	width: 82%;
+	margin: 0% 10% 0% 10%;
+}
+
+div {
+	opacity: 1.0;
+}
+
+.post {
+	margin: 0% 10% 0% 10%;
+	width: 80%;
+	padding: 10px;
+}
+
+.post p {
+	color: white;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.post .date {
+	font-weight: bold;
+}
+
+.post h1 {
+	font-size: 1.5em;
+	margin-top: 0.5em;
+}
+
+.post a:link {
+	color: #F3D16A;
+}
+
+.post a:visited {
+	color: #F3D16A;
+}
+
+.post a:hover {
+	color: #F3D16A;
+	opacity: 0.8;
+}
+
+/* For actual blog posts */
+
+main.blog-post {
+	padding: 3em 10% 3em 10%;
+	color: white;
+}
+
+main.blog-post p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+main.blog-post h4 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.25em;
+}
+
+main ul, main ol {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.title {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: #D5E9FF;
+	color: black;
+	opacity: 0.7;
+}
+
+.blog-post .emphasis {
+	color: #F3D16A;
+}
+
+span.important {
+	color: #F3D16A;
+	font-weight: bold;
+}
+
+pre {
+	padding: 0.5em;
+	margin: 1em auto;
+	width: 80%; 
+	background-color: #F3D16A;
+	opacity: 0.7;
+}
+
+code {
+	font-family: Monospace;
+	padding: 0.5em;
+	color: black;
+}
+
+a:link {
+	color: #F3D16A;
+}
+
+a:visited {
+	color: #F3D16A;
+}
+
+a:hover {
+	color: #F3D16A;
+	opacity: 0.8;
+}
