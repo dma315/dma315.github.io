@@ -1,307 +1,222 @@
+html, body {
+  height: 100%;
+}
+
 * {
-	margin: 0px;
-	font-family: 'Cabin', sans-serif;
+  font-family: Cabin;
 }
 
-p, h1, h2, h3, h4, h5. h6 {
-	margin-top: 1em;
-	margin-bottom: 1em;
+.navbar {
+  margin-bottom: 0px;
 }
 
-body {
-	max-width: 1440px;
-	background-color: #484B55;
-	margin: 0px auto;
+/* Create flexbox container and child objects, with responsivenes */
+
+div.no-nav-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-/* Header and Nav Bar */
-
-header {
-	margin: 0 auto;
-	position: relative;
-	width: 100%;
+div.nav-container {
+  height: calc(100% - 50px);
+  display: flex;
+  flex-flow: row wrap;
 }
 
-header#cover {
-	width: 100%;
-	height: 350px;
-	background-image: url("../imgs/2014-tree-lights.jpeg");
-	background-size: cover;
-	background-position: center 90%;
+div.hover-box {
+  min-height: 100px;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
-nav {
-	background-color: #F3D16A;
-	width: 100%;
-	height: 50px;
-	position: absolute;
-	bottom: 0px;
-	z-index: 100;
-	opacity: 0.8;
-	color: black;
+div.index-tile {
+  width: 100%;
+  flex: 1 100%;
+  background-size: cover;
+  display: flex;
 }
 
-div#name {
-	float: left;
-	margin: 10px;
-	padding: 5px;
+div.opacity {
+  background-color: black;
+  flex: 1 100%;
+  opacity: 0.6;
 }
 
-div#navlinks {
-	float: right;
-	margin: 10px;
-	padding: 5px;
+/* Add Centered Text -- I hate that CSS makes me do this... */
+
+div.relative-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
 }
 
-div#navlinks li {
-	display: inline;
-	padding: 10px;
+div.table-container {
+  height: 100%;
+  margin: 0 auto;
+  display: table;
 }
 
-div#navlinks a:link {
-	text-decoration: none;
-	color: black;
+div.table-container > div.table-cell {
+  vertical-align: middle;
+  display: table-cell;
+  height: 100%;
+  text-align: center;
 }
 
-div#navlinks a:visited {
-	text-decoration: none;
-	color: black;
+div.table-container > div.table-cell > p {
+  color: #F8F8F8;
+  font-size: 1.5em;
 }
 
-div#navlinks a:hover {
-	text-decoration: none;
-	color: black;
-	border-bottom: 2px solid black;
-	opacity: 0.8;
+/* Add in Media Queries for Responsiveness */
+
+@media all and (min-width: 800px) {
+  div.hover-box {
+    flex: 1 33.3333333%;
+    background-position: bottom;
+  }
+
+  div.index-tile {
+    background-position: bottom;
+  }
 }
 
-/* 6 tiles base formatting */
+@media all and (max-width: 800px) {
+  div.hover-box {
+    flex: 1 100%;
+  }
 
-main.boxes {
-	position: relative;
+  div.index-tile {
+    background-position: 50% 60%;
+  }
 }
 
-main ul.tile {
-	text-align: center;
-	padding: 0px;
-	background-color: #323440;
-	color: black;
+/* Hover Effects */
+
+div {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-main ul.tile li {
-	width: 33.33%;
-	height: 300px;
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-}
-
-/* Image boxes */
-
-li#box2 {
-	background-image: url("../imgs/2012-pcb.jpg");
-	background-size: cover;
-	background-position: center 0%;
-}
-
-li#box4 {
-	background-image: url("../imgs/2015-london-trees.jpg");
-	background-size: cover;
-	background-position: center 75%;
-}
-
-li#box6 {
-	background-image: url("../imgs/2014-breck-trees.jpg");
-	background-size: cover;
-	background-position: center 80%;
+div.relative-container {
+  -webkit-transition: 0.0s;
+  transition: 0.0s;
 }
 
 
-/* Text Boxes */
+/* Link effects */
 
-li.text {
-	color: white;
+.hover-box a:link, .hover-box a:hover, .hover-box a:visited {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 1.5em;
 }
 
-.table-wrapper {
-	display: table;
-	height: 300px;	
-	width: 100%;
+/* Button */
+
+div.index-button {
+  border: 1px solid white;
+  width: 175px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.who {
-	display: table-cell;
-	width: 100%;
-	vertical-align: middle;
+div.index-button:hover {
+  color: #000033;
+  background-color: #F8F8F8;
+  opacity: 0.8;
+  border: 1px solid #000033;
 }
 
-.who p {
-	font-size: 1.5em;
-	color: #F3D16A;
+/* Navbar re-color */
+
+.navbar-inverse, .navbar {
+  background-image: linear-gradient(to bottom,#000033,#000033 100%);
+  border-radius: 0px;
+  border: none;
 }
 
-/* Image overlays */
-
-li .image-overlay {
-	width: 101%;
-	height: 300px;
-	background-color: #D5E9FF;
-	opacity: 0.8;
-	display: table;
-	visibility: hidden;
+.navbar-inverse .navbar-nav>li>a {
+    color: #F8F8F8;
 }
 
-.description { /* Uused also for text overlaps */
-	z-index: 100;
-	display: table-cell;
-	vertical-align: middle;
-	padding-left: 15%;
-	padding-right: 15%;
+.navbar-inverse .navbar-nav>li>a:hover {
+    opacity: 0.5;
+}    
+
+/* Background images for tiles */
+
+div#tile-1 {
+  background-image: url("../imgs/trees/door-county.jpg");
 }
 
-.description p {
-	margin-top: 1em;
-	margin-bottom: 1em;
+div#tile-2 {
+  background-image: url("../imgs/trees/grayton-beach.jpg");
 }
 
-#box2:hover .image-overlay, #box4:hover .image-overlay, #box6:hover .image-overlay {
-	visibility: visible;
+div#tile-3 {
+  background-image: url("../imgs/trees/london-hyde-park.jpg");
 }
 
-/* Text overlays - god this was a pain and such a hack, I'm sorry */
-
-.table-wrapper .description {
-	height: 300px;
-	background-color: #D5E9FF;
-	color: black;
-	display: table-cell;
-	visibility: hidden;
-	padding: 0%;
+div#tile-4 {
+  background-image: url("../imgs/trees/wellington-backyard.jpg");
 }
 
-.table-wrapper .description p {
-	width: 0px;
-	visibility: hidden;
-	font-size: 0em;
+div#tile-5 {
+  background-image: url("../imgs/trees/breck-3.jpg");
 }
 
-.table-wrapper:hover .description {
-	visibility: visible;
-	padding-left: 15%;
-	padding-right: 15%;
+div#tile-6 {
+  background-image: url("../imgs/trees/elk-grove.jpg");
 }
 
-.table-wrapper:hover .description p {
-	width: 100%;
-	visibility: visible;
-	font-size: 1em;
+/* Background images for contact tiles */
+
+div#contact-1 {
+  background-image: url("../imgs/cities/chi-1.jpg");
 }
 
-.table-wrapper:hover .who {
-	visibility: hidden;
-	width: 0px;
+div#contact-2 {
+  background-image: url("../imgs/cities/chi-2.jpg");
 }
 
-.table-wrapper:hover .who p {
-	visibility: hidden;
-	width: 0px;
+div#contact-3 {
+  background-image: url("../imgs/cities/chi-3.jpg");
 }
 
-/* Footer */
-
-footer {
-	height: 20px;
-	background-color: #F3D16A;
-	color: black;
-	padding: 20px 0px 20px 0px;
-	text-align: center;
-	opacity: 0.8;
-	font-size: 0.75em;
+div#contact-4 {
+  background-image: url("../imgs/cities/chi-4.jpg");
 }
 
-footer ul {
-	padding: 0px;
+div#contact-5 {
+  background-image: url("../imgs/cities/chi-5.jpg");
 }
 
-footer li {
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 5px;	
-	font-size: 0.75em;
-	width: 60px;
+div#contact-6 {
+  background-image: url("../imgs/cities/chi-6.jpg");
 }
 
-footer a:link {
-	text-decoration: none;
-	color: black;
+img.media-icon {
+  position: relative;
+  top: -32px;
+  z-index: 10;
 }
 
-footer a:visited {
-	text-decoration: none;
-	color: black;
+div.media-overlay {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 100%;
+  top: 16px;
 }
 
-footer a:hover {
-	text-decoration: none;
-	color: black;
-	border-bottom: 1px solid black;
-	opacity: 0.8;
-}
-
-/* Contact Page */
-
-div.contact {
-	width: 100%;
-	background-image: url("../imgs/chicago-lake.jpg");
-	background-position: center-bottom;
-	background-size: cover;
-	position: relative;
-}
-
-div.contact #overlay {
-	background-color: rgba(72,75,85,0.4);
-	/* #484B55 */
-}
-
-main.contact {
-	margin: auto;
-	width: 50%;
-	padding: 3em 10% 3em 10%;
-	text-align: center;
-	color: white;
-}
-
-main.contact figure {
-	margin: 0 auto;
-	padding: 0.5em;
-	vertical-align: middle;
-	width: 40%;
-	text-align: left;
-}
-
-main.contact figure#first {
-	margin-top: 2em;
-}
-
-main.contact p.handle {
-	margin-left: 1em;
-	vertical-align: middle;
-	font-size: 1em;
-	display: inline-block;
-}
-
-main.contact img {
-	vertical-align: middle;
-}
-
-main.contact a:link {
-	color: white;
-}
-
-main.contact a:visited {
-	color: white;
-}
-
-main.contact a:hover {
-	color: #F3D16A;
+div.index-tile:hover div.media-overlay {
+  background-color: #000033;
+  opacity: 0.8;
 }

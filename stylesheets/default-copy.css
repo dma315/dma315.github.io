@@ -12,8 +12,14 @@ html, body {
 
 /* Create flexbox container and child objects, with responsivenes */
 
-div.index-container {
+div.no-nav-container {
   height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div.nav-container {
+  height: calc(100% - 50px);
   display: flex;
   flex-flow: row wrap;
 }
