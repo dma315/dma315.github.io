@@ -13,7 +13,7 @@ main h1 {
 }
 
 body a:link, a:visited {
-  color: #cce5ff;
+  color: #ccddff;
 }
 
 footer {
@@ -31,5 +31,5 @@ div.title {
 }
 
 .emphasis {
-  color: #1a89ff;
+  color: #3377ff;
 }
