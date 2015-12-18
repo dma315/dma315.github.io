@@ -129,8 +129,10 @@ div.index-button:hover {
 
 /* Navbar re-color */
 
-.navbar-inverse {
-  background-image: linear-gradient(to bottom,#000033 0,#00001a 60%);
+.navbar-inverse, .navbar {
+  background-image: linear-gradient(to bottom,#000033,#000033 100%);
+  border-radius: 0px;
+  border: none;
 }
 
 .navbar-inverse .navbar-nav>li>a {
