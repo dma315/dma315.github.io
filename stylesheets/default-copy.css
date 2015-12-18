@@ -1,0 +1,222 @@
+html, body {
+  height: 100%;
+}
+
+* {
+  font-family: Cabin;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+/* Create flexbox container and child objects, with responsivenes */
+
+div.no-nav-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div.nav-container {
+  height: calc(100% - 50px);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div.hover-box {
+  min-height: 100px;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+div.index-tile {
+  width: 100%;
+  flex: 1 100%;
+  background-size: cover;
+  display: flex;
+}
+
+div.opacity {
+  background-color: black;
+  flex: 1 100%;
+  opacity: 0.6;
+}
+
+/* Add Centered Text -- I hate that CSS makes me do this... */
+
+div.relative-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+div.table-container {
+  height: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+div.table-container > div.table-cell {
+  vertical-align: middle;
+  display: table-cell;
+  height: 100%;
+  text-align: center;
+}
+
+div.table-container > div.table-cell > p {
+  color: #F8F8F8;
+  font-size: 1.5em;
+}
+
+/* Add in Media Queries for Responsiveness */
+
+@media all and (min-width: 800px) {
+  div.hover-box {
+    flex: 1 33.3333333%;
+    background-position: bottom;
+  }
+
+  div.index-tile {
+    background-position: bottom;
+  }
+}
+
+@media all and (max-width: 800px) {
+  div.hover-box {
+    flex: 1 100%;
+  }
+
+  div.index-tile {
+    background-position: 50% 60%;
+  }
+}
+
+/* Hover Effects */
+
+div {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+div.relative-container {
+  -webkit-transition: 0.0s;
+  transition: 0.0s;
+}
+
+
+/* Link effects */
+
+.hover-box a:link, .hover-box a:hover, .hover-box a:visited {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 1.5em;
+}
+
+/* Button */
+
+div.index-button {
+  border: 1px solid white;
+  width: 175px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+div.index-button:hover {
+  color: #000033;
+  background-color: #F8F8F8;
+  opacity: 0.8;
+  border: 1px solid #000033;
+}
+
+/* Navbar re-color */
+
+.navbar-inverse, .navbar {
+  background-image: linear-gradient(to bottom,#000033,#000033 100%);
+  border-radius: 0px;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #F8F8F8;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    opacity: 0.5;
+}    
+
+/* Background images for tiles */
+
+div#tile-1 {
+  background-image: url("../imgs/trees/door-county.jpg");
+}
+
+div#tile-2 {
+  background-image: url("../imgs/trees/grayton-beach.jpg");
+}
+
+div#tile-3 {
+  background-image: url("../imgs/trees/london-hyde-park.jpg");
+}
+
+div#tile-4 {
+  background-image: url("../imgs/trees/wellington-backyard.jpg");
+}
+
+div#tile-5 {
+  background-image: url("../imgs/trees/breck-3.jpg");
+}
+
+div#tile-6 {
+  background-image: url("../imgs/trees/elk-grove.jpg");
+}
+
+/* Background images for contact tiles */
+
+div#contact-1 {
+  background-image: url("../imgs/cities/chi-1.jpg");
+}
+
+div#contact-2 {
+  background-image: url("../imgs/cities/chi-2.jpg");
+}
+
+div#contact-3 {
+  background-image: url("../imgs/cities/chi-3.jpg");
+}
+
+div#contact-4 {
+  background-image: url("../imgs/cities/chi-4.jpg");
+}
+
+div#contact-5 {
+  background-image: url("../imgs/cities/chi-5.jpg");
+}
+
+div#contact-6 {
+  background-image: url("../imgs/cities/chi-6.jpg");
+}
+
+img.media-icon {
+  position: relative;
+  top: -32px;
+  z-index: 10;
+}
+
+div.media-overlay {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 100%;
+  top: 16px;
+}
+
+div.index-tile:hover div.media-overlay {
+  background-color: #000033;
+  opacity: 0.8;
+}
