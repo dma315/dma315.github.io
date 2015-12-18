@@ -1,11 +1,11 @@
 
 var links = {
-  "tile-1": ["hi, i'm david ma","index.html"],
-  "tile-2": ["about me", "about/about.html"],
-  "tile-3": ["contact me", "contact/contact.html"],
-  "tile-4": ["resume", "resume/resume.html"],
-  "tile-5": ["projects","projects/index.html"],
-  "tile-6": ["blog","blog/index.html"]
+  "tile-1": ["Hi, I'm David Ma","index.html"],
+  "tile-2": ["About Me", "about/about.html"],
+  "tile-3": ["Contact Me", "contact/contact.html"],
+  "tile-4": ["Resume", "resume/resume.html"],
+  "tile-5": ["Projects","projects/index.html"],
+  "tile-6": ["Blog","blog/index.html"]
 }
 
 $("div.hover-box").on("mouseenter click",
