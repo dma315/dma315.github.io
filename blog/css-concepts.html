@@ -5,28 +5,25 @@
 <head>
   <title>CSS Concepts</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF 8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css" />
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default-copy.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <script>$(function() {$(".navbar").load("../snippets/navbar.html");});</script>
 </head>
 
 <body>
 
-  <!-- Header and Nav Bar -->
-  <header id="cover">
-  <nav>
-    <div id="name">Hi, I'm David Ma</div>
-    <div id="navlinks">
-      <ul>
-        <li><a href="../about.html">About Me</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-        <li><a href="../blog/index.html">Blog</a></li>
-        <li><a href="../projects/index.html">Projects</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  </header>
+  <div class="navbar">
+  </div>
 
   <div class="title">
   DBC Week 3:  CSS Concepts
@@ -35,24 +32,24 @@
   <main class="blog-post">
   <p></p>
     <h4 class="emphasis">CSS Positioning</h4>
-        <p><span class="important">What are the differences between relative, absolute, fixed, and static positioning?</span></p>
+        <p><span class="emphasis">What are the differences between relative, absolute, fixed, and static positioning?</span></p>
         <p>One of the big struggles I had this week was learning about the different positioning types and how to use them, so for my blog this week, I decided I'd give a shot to making positioning clear. Here's my attempt.</p>
         <p>First I think it's important to understand why this topic is even important. When thinking about any given page, a great way to start thinking about positioning is imagining a bunch of boxes floating around in space. They can be above, below, to the right or left of each other, or they can be on top of each other. Positioning is the way one would arrange their boxes so that they behave exactly how you'd expect. Surprisingly to me, this was actually pretty difficult.</p>
         <ul>
-          <li><span class="important">Static</span>:  I think it makes sense to start with static, since it's the default value (if no other position value is specified.
+          <li><span class="emphasis">Static</span>:  I think it makes sense to start with static, since it's the default value (if no other position value is specified.
             <ul>
               <li>For a given box in a sea of boxes, if there's no position "property" specified, the box will just go where it naturally goes in relation to everything else.</li>
               <li>This could mean that it gets pushed to the right by another box, or gets bumped to another row.</li>
               <li>It has a pretty low claim to occupy the space its in. Others can trump it. It just means that the box will show up where it's supposed to.</li>
             </ul>
           </li>
-          <li><span class="important">Relative</span>:  Next in line is relative. If static is where a box is supposed to go, relative is where it's supposed to go -- plus or minus a few adjustments. 
+          <li><span class="emphasis">Relative</span>:  Next in line is relative. If static is where a box is supposed to go, relative is where it's supposed to go -- plus or minus a few adjustments. 
             <ul>
               <li>When relative is selected as the position type, we now have the power to say things like "left: 50px" which means that it will get bumped from the left of its static position by 50 pixels.</li>
               <li>I think the best explanation I read for this was that its just like static, but with adjustments</li>
             </ul>
           </li> 
-          <li><span class="important">Absolute</span>:  Abslolute begins to have some power. An absolute position goes where it wants to go. 
+          <li><span class="emphasis">Absolute</span>:  Abslolute begins to have some power. An absolute position goes where it wants to go. 
             <ul>
               <li>The key element that's confusing about absolute is that it's still relative to other objects. In particular, it's relative to the first parent box.</li>
               <li>So I think two examples can make this clear.
@@ -63,7 +60,7 @@
               </li>
             </ul>
           </li> 
-          <li><span class="important">Fixed</span>:  Finally, fixed! Fixed is perhaps the easiest to understand. It just goes where it wants all the time and stays there.
+          <li><span class="emphasis">Fixed</span>:  Finally, fixed! Fixed is perhaps the easiest to understand. It just goes where it wants all the time and stays there.
             <ul>
               <li>If we specify a box as fixed with "left: 50px" - the box will basically be 50px from the left side of the browser.</li>
               <li>No matter what.</li>
@@ -77,7 +74,6 @@
 
     <!-- Footer -->
   <footer>
-    <p>This has been fun. No copyrights here yet.</p>
   </footer>
 
   </body>
