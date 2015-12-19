@@ -1,0 +1,79 @@
+div.nav-container {
+  height: calc(195% - 50px);
+}
+
+div.table-container {
+  width: 80%;
+}
+
+.about-me {
+  color: #000033;
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+  padding: 5%;
+  border-radius: 5px;
+  margin: 5%;
+}
+
+/* Images */
+
+div#about-1 {
+  background-image: url("../imgs/friends/family-paris.jpg");
+  background-position: 50% 30%;
+}
+
+div#about-2 {
+  background-image: url("../imgs/friends/old-man-cave.jpg");
+  background-position: 50% 0%;
+}
+
+div#about-3 {
+  background-image: url("../imgs/friends/nu-graduation.jpg");
+  background-position: 50% 50%;
+}
+
+div#about-4 {
+  background-image: url("../imgs/friends/bcg-photobooth.jpg");
+  background-position: 50% 50%;
+}
+
+div#about-5 {
+  background-image: url("../imgs/friends/cmh-thinking.jpg");
+  background-position: 50% 10%;
+}
+
+div#about-6 {
+  background-image: url("../imgs/friends/coffee.jpg");
+  background-position: 50% 0%;
+}
+
+div#about-7 {
+  background-image: url("../imgs/friends/igor-val.jpg");
+  background-position: 50% 10%;
+}
+
+div#about-8 {
+  background-image: url("../imgs/friends/ski-trip-bw.jpg");
+  background-position: 50% 100%;
+}
+
+div#about-9 {
+  background-image: url("../imgs/friends/brandon-statue.jpg");
+  background-position: 50% 25%;
+}
+
+div#about-10 {
+  background-image: url("../imgs/friends/girl-goat.jpg");
+  background-position: 50% 50%;
+}
+
+div#about-11 {
+  background-image: url("../imgs/friends/cmh-pingpong.jpg");
+  background-position: 0% 50%;
+}
+
+div#about-12 {
+  background-image: url("../imgs/friends/chvrches.jpg");
+  background-position: 50% 100%;
+}
