@@ -16,6 +16,10 @@ div.table-container {
   margin: 5%;
 }
 
+div.hover-box {
+  min-height: 300px;
+}
+
 /* Images */
 
 div#about-1 {
