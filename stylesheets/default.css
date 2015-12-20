@@ -127,16 +127,16 @@ div.index-button {
 }
 
 div.index-button:hover {
-  color: #000033;
+  color: #002833;
   background-color: #F8F8F8;
   opacity: 0.8;
-  border: 1px solid #000033;
+  border: 1px solid #002833;
 }
 
 /* Navbar re-color */
 
 .navbar-inverse, .navbar {
-  background-image: linear-gradient(to bottom,#000033,#000033 100%);
+  background-image: linear-gradient(to bottom,#17414C, #002833 100%);
   border-radius: 0px;
   border: none;
 }
@@ -217,6 +217,6 @@ div.media-overlay {
 }
 
 div.index-tile:hover div.media-overlay {
-  background-color: #000033;
+  background-color: #002833;
   opacity: 0.8;
 }

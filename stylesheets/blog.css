@@ -1,3 +1,11 @@
+/*
+
+#00647F - Title Bar
+#00A1CC - Emphasis
+linear-gradient(to bottom,#17414C, #002833 100%) - Navbar gradient
+
+*/
+
 body {
   background-image: url("../imgs/congruent_outline.png");
   background-repeat: repeat;
@@ -26,12 +34,12 @@ div.title {
   text-align: center;
   padding: 0.5em;
   font-size: 1.5em;
-  background-color: #1a1a1a;
+  background-color: #00647F;
   margin-bottom: 1em;
 }
 
 .emphasis {
-  color: #3377ff;
+  color: #00A1CC;
 }
 
 blockquote {
