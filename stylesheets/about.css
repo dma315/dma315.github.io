@@ -8,6 +8,7 @@ div.table-container {
 
 .about-me {
   color: #002833;
+  border: 1px solid #002833;;
   background-color: white;
   opacity: 0.8;
   padding: 5%;
