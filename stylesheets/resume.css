@@ -3,7 +3,6 @@
 }
 
 body {
-	background-color: #262626;
 	background-image: url("../imgs/congruent_outline.png");
 	background-repeat: repeat;
 	color: #F8F8F8;
@@ -113,13 +112,13 @@ details summary::-webkit-details-marker {
 
 	div.resume-section {
 		padding: 1em;
-		background-color: #1a1a1a;
-		color: #e6e6e6;
+		background-color: #00647F;
+		color: #f8f8f8;
 		font-size: 1.25em;
 	}
 
 	span.emphasis {
-		color: white; /*Dark Blue*/
+		color: #00A1CC; /*Dark Blue*/
 		font-weight: bold;
 	}
 
