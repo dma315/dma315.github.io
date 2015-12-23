@@ -52,6 +52,33 @@
 	  "description": "Lockpicking is a lost art. Revive it with this transpartent padlock and toolset to up those stats. +1 Lockpicking.",
 	  "price": 24.99,
 	  "categories": ["tools","random"]
+	},
+	"6": {
+	  "name": "Sphero BB-8 App-Enabled Droid", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1RGxJuJ",
+	  "img": "http://ecx.images-amazon.com/images/I/81E6gtwEqXL._SL1500_.jpg",
+	  "description": "Two words: Star. Wars. Now you can own your own BB-8 to control with your phone and battle the First Order",
+	  "price": 149.95,
+	  "categories": ["star wars","toys"]
+	},
+	"7": {
+	  "name": "Slammo Game Set", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1RGyaoZ",
+	  "img": "http://ecx.images-amazon.com/images/I/91QkY4hiAXL._SL1500_.jpg",
+	  "description": "If you've been to a beach in 2015, you know what Slammo is and will want to buy this. If you haven't been to a beach, get with the times and get a tan.",
+	  "price": 39.99,
+	  "categories": ["toys","outdoors"]
+	},
+	"8": {
+	  "name": "Light Up Ties", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1RGyEeM",
+	  "img": "http://ecx.images-amazon.com/images/I/51ebYkZSYCL._SL250_.jpg",
+	  "description": "Be 'that guy' with this light up tie. !0+ colors to choose from. Two settings: on, and strobe (ie. party).",
+	  "price": 19.97,
+	  "categories": ["clothes"]
 	}
 }
 
