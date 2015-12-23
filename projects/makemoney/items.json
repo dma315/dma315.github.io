@@ -79,6 +79,61 @@
 	  "description": "Be 'that guy' with this light up tie. !0+ colors to choose from. Two settings: on, and strobe (ie. party).",
 	  "price": 19.97,
 	  "categories": ["clothes"]
+	},
+	"9": {
+	  "name": "Coolest Cooler", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1J4Fms4",
+	  "img": "http://ecx.images-amazon.com/images/I/41rn%2BZpX8dL._SL250_.jpg",
+	  "description": "Regular coolers that keep things cold are SO 1998. This thing has a battery, blender, bluetooth, speakers, bottle opener, serving plates... but wait there's more!",
+	  "price": 379.00,
+	  "categories": ["outdoors","random"]
+	},
+	"10": {
+	  "name": "Dog Activity Monitor", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1RGFIYI",
+	  "img": "http://ecx.images-amazon.com/images/I/61dqVvW-nCL._SL1148_.jpg",
+	  "description": "Fitbit for your dog. Set some health goals for Fito, and track rest, active and play time",
+	  "price": 99.95,
+	  "categories": ["tech","random"]
+	},
+	"11": {
+	  "name": "Water Garden / Fish Tank", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1J4FYy6",
+	  "img": "http://ecx.images-amazon.com/images/I/91n1zI2SH2L._SL1500_.jpg",
+	  "description": "the CIRRRRRRCLLLLLE of lifffffffeeeeee... ahem... Hello closed-loop, self-cleaning ecosystem. The fish feeds the plants, the plants clean the water.",
+	  "price": 49.99,
+	  "categories": ["kitchen","random"]
+	},
+	"12": {
+	  "name": "Coin 2.0 (Credit Card Consolidater)", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1RGGaX2",
+	  "img": "http://ecx.images-amazon.com/images/I/71aKWt79gvL._SL1500_.jpg",
+	  "description": "Imagine having all of your credit/debit/gift/loyalty cards in one card... If you liked that thought excersise, then buy this.",
+	  "price": 99.00,
+	  "categories": ["clothes","random"]
+	},
+	"13": {
+	  "name": "Super toy car race track", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1J4GpIH",
+	  "img": "http://ecx.images-amazon.com/images/I/81HhvSAcRPL._SL1500_.jpg",
+	  "description": "Race, battle, and control computer enhanced supercars from the future. Control the cars with your cellphone, then add virtual weapons to demolish opponents.",
+	  "price": 119.99,
+	  "categories": ["toys"]
+	},
+	"14": {
+	  "name": "Thermal Imager for Android", 
+	  "date": "12/23/15",
+	  "link": "http://amzn.to/1J4GBYf",
+	  "img": "http://ecx.images-amazon.com/images/I/51%2BhBOUm5oL.jpg",
+	  "description": "Turn your Android into a thermal imager. Use it for practical things like kitchen/car/electrical temperatures, or just pretend to be a Predator...",
+	  "price": 29.00,
+	  "categories": ["tools","random"]
 	}
+	
 }
 
